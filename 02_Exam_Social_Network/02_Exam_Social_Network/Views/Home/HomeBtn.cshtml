@@ -1,0 +1,78 @@
+﻿@using _02_Exam_Social_Network.Data.Entities
+@* @using _02_Exam_Social_Network.js *@
+@model List<User>
+
+<div class="StoriesBack">
+    @foreach(var item in Model)
+    {
+        <div class="fullBlock">
+            <div class="StoriesItem">
+                @* <div class="LineBack"> *@
+                    <img class="ImgPos" src=@item.ImgUrl /> 
+
+                    @* <div class="LineUp"> *@
+
+                    @* </div> *@
+                @* </div> *@
+                
+            </div>
+
+            <p class="textback">@item.NickName</p>
+        </div>
+        
+    }
+</div>
+<div class="PhotoBack">
+    @foreach (var item in Model)
+    {
+        foreach (var i in @item.Posts)
+        {
+         
+                <div class="mainblock">
+                    <div class="firstblockphoto">
+                        <div class="ImgDivPost1">
+                            <img class="imgphoto" src=@item.ImgUrl />
+
+                        </div>
+                        <div class="firstblockcolumn">
+                            <p class="fontMax">@item.NickName</p>
+                            <p class="fontMax2">Rivne</p>
+                        </div>
+                        <div class="btndiv">
+                            <button class="morebtn"></button>
+                        </div>
+                    </div>
+                    <div class="MainImgdiv">
+                        <button onclick="" class="rigthBtn"></button>
+                        <div class="MainImgdiv2">
+                            @foreach (var url in @i.ImgUrls)
+                            {
+                                <img class="ImgUrlUp"
+                                     src=@url.Url />
+                            }
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="MainImgdiv1"></div>
+                    <div class="MainDiv22">
+                    @foreach (var items in @i.Coments)
+                        {
+                        @* <p>@items.Message</p> *@
+                            if (@items.UserId == @i.UserId)
+                            {
+                                <p><span class="UserNameSpan">@items.User.NickName</span> @items.Message</p>
+                            }
+                        }
+                </div>
+                </div>
+
+         
+            
+           
+        }
+        
+    }
+   
+   
+</div>

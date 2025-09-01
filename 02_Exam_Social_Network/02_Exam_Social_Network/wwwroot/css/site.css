@@ -1,0 +1,382 @@
+html {
+    font-size: 14px;
+    padding: 0px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  padding:0px;
+  margin:0px;
+  display:flex;
+  flex-direction:row;
+}
+
+.leftMenu {
+    position:fixed;
+    margin: 0px;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #262626;
+    border-bottom: 0;
+    
+}
+/*.leftMenuBack {*/
+/*    position: fixed;*/
+    /*margin: 0px;
+    width: 450px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #262626;
+    border-bottom: 0;*/
+    /*    justify-content:*/
+/*}*/
+.FirstBlock
+{
+/*    background-color:blanchedalmond;*/
+    width:100%;
+    height:160px;
+}
+.SecondBlock {
+/*    background-color:black;*/
+    width:100%;
+    height:stretch;
+    padding:8px;
+    gap:8px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+}
+.ThirdBlock {
+/*    background-color: blanchedalmond;*/
+    width: 100%;
+    height: 200px;
+}
+.buttondef {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    transition: background-color 0s linear;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:17px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    box-sizing:border-box;
+    padding:20px;
+    flex-direction:row;
+    text-decoration:none;
+
+}
+a {
+    text-decoration: none;
+}
+    .buttondef:hover {
+        transition: background-color 0.3s linear;
+        background-color: #1a1a1a;
+    }
+.buttonimg
+{
+    width:25px;
+    height:25px;
+    margin-right:10px;
+}
+.container
+{
+    margin-left:250px;
+/*    margin-right:700px;*/
+    width: stretch;
+    height:3500px;
+    background-color:black;
+    color:white;
+    padding: 15px;
+    display:flex;
+    justify-content:center;
+/*    align-items:center;*/
+}
+/*.rightMenu {
+    margin: 0px;
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background: black;*/
+    /*    justify-content:*/
+/*}*/
+
+.rightMenu{
+    width:700px;
+    background-color:black;
+
+}
+
+.StoriesBack {
+    width: stretch;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:right;
+    gap:15px;
+}
+.StoriesItem {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    gap: 0px;
+    margin: 10px;
+    background-color: #363636;
+    outline: 3.5px solid #363636;
+    outline-offset: 3.5px;
+}
+    .StoriesItem:active  {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+        
+.LineBack {
+    width: 95px;
+    height: 95px;
+    /*    padding:2.5px;*/
+    /*    background:100px;*/
+    background-color: #363636;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: 10px solid red;
+    outline-offset: 5px;
+    border: 0px;
+}
+.LineUp {
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+/*    padding:10px;*/
+    border-radius: 95px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    overflow: hidden;
+}
+.ImgPos {
+    width: 100%;
+    height: 100%;
+    /*    border-radius: 90px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.fullBlock
+{
+    display:flex;
+    flex-direction:column;
+    gap:0px;
+    margin:0px;
+    padding:0px;
+}
+.textback {
+    /*    background-color: red;*/
+    gap: 0px;
+    margin: 0px;
+    font-family: "Venn Medium";
+    text-align: center;
+    color: #a8a8a8;
+    font-size:12px;
+    /*    justify-content:center;*/
+}
+.PhotoBack
+{
+    width:100%;
+    height:95%;
+/*    background-color: red;*/
+    display:flex;
+    align-items:center;
+    padding:10px;
+    flex-direction:column;
+}
+.mainblock {
+    width: 450px;
+    height: 800px;
+    background-color: black;
+    margin-top: 10px;
+/*    border-bottom: 1px solid white;*/
+    border-bottom: 1px solid #262626;
+
+    margin-bottom:10px;
+}
+.firstblockphoto {
+    width: stretch;
+    height: 50px;
+    /*    background-color:blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+/*    background-color:forestgreen;*/
+    /*    padding-left:5px;*/
+    padding:0px;
+}
+
+.firstblockcolumn {
+    display: flex;
+    /*    background-color: antiquewhite;*/
+    width: stretch;
+    max-width:300px;
+    height: 50px;
+    margin-left: 5px;
+    /*    margin-right:50px;*/
+    flex-direction: column;
+    /*    font-family: "Kanit", sans-serif;*/
+    font-family: "Venn Medium";
+    gap: 0px;
+    justify-content: center;
+    /*    align-items:center;*/
+/*    background-color:rebeccapurple;*/
+}
+.fontMax {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.fontMax2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 11px;
+}
+.btndiv
+{
+    width:50px;
+    height:50px;
+/*    background-color:red;*/
+}
+.morebtn
+{
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    outline:none;
+    border:0;
+}
+.MainImgdiv
+{
+    width:450px;
+    height:600px;
+    background-color:darkgrey;
+    border-radius:3px;
+    margin-top:5px;
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    overflow:hidden
+}
+.MainImgdiv2 {
+    width: 100%;
+    height: 600px;
+    background-color: darkgrey;
+    border-radius: 3px;
+/*    margin-top: 5px;*/
+/*    margin-left:400px;*/
+    position:absolute;
+/*    left:-450px;*/
+/*left:1px;*/
+    display: flex;
+    flex-direction: row;
+}
+.MainImgdiv1 {
+    width: 100%;
+    height: 50px;
+    background-color: darkseagreen;
+}
+.ImgUrlUp
+{
+   height:101%;
+   width:100%;
+    object-fit:cover;
+}
+.imgphoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+/*    border-radius: 100px;*/
+}
+.ImgDivPost1 {
+    width: 35px;
+    box-sizing:border-box;
+    height: 35px;
+/*    background-color: red;*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0px;
+/*    margin-top:3px;*/
+/*    margin:10px;*/
+    margin-left:5px;
+}
+.rigthBtn
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:50px;
+    height:50px;
+    z-index:1;
+}
+.MainDiv22 {
+    width: 100%;
+    height: 50px;
+    /*    background-color:red;*/
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+}
+.UserNameSpan
+{
+    font-weight:400;
+}

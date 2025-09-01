@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MYWORKITSTEP\\04_Homework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\views\\home\\controller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\views\\home\\controller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|d:\\myworkitstep\\04_homework\\04_homework\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D239BD1B-383F-4522-A8AD-56DE4A01E354}|04_Homework\\04_Homework.csproj|solutionrelative:04_homework\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "04_Homework\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "04_Homework\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T14:20:57.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "04_Homework\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "04_Homework\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T14:20:35.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "04_Homework\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "04_Homework\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T14:20:32.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Controller.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Controller.cshtml",
+              "RelativeDocumentMoniker": "04_Homework\\Views\\Home\\Controller.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Controller.cshtml",
+              "RelativeToolTip": "04_Homework\\Views\\Home\\Controller.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T14:20:10.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "04_Homework\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "04_Homework\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T14:17:29.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "04_Homework\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "04_Homework\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T14:17:04.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "04_Homework\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\04_Homework\\04_Homework\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "04_Homework\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T14:17:01.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

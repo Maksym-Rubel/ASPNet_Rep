@@ -1,0 +1,11 @@
+﻿@model Product
+
+
+<div style="display:flex; justify-content:center; align-items:center; flex-direction:column;">
+    <img style="width:300px; height:auto" src="@(Model.ImageUrl ?? "https://thumbs.dreamstime.com/b/no-image-icon-vector-available-picture-symbol-isolated-white-background-suitable-user-interface-element-205805243.jpg")" alt="@Model.Title" height="50" />
+    <h2>@Model.Title</h2>
+    <p>Quantity: @Model.Quantity</p>
+    <p>Price: @Model.Price</p>
+
+</div>
+
