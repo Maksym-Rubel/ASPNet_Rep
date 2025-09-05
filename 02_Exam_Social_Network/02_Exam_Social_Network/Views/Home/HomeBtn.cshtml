@@ -1,10 +1,15 @@
 ﻿@using _02_Exam_Social_Network.Data.Entities
 @* @using _02_Exam_Social_Network.js *@
 @model List<User>
+    
+
+
+
 
 <div class="StoriesBack">
     @foreach(var item in Model)
     {
+        
         <div class="fullBlock">
             <div class="StoriesItem">
                 @* <div class="LineBack"> *@
@@ -25,10 +30,11 @@
 <div class="PhotoBack">
     @foreach (var item in Model)
     {
-        foreach (var i in @item.Posts)
+        @foreach (var i in @item.Posts)
         {
-         
+            
                 <div class="mainblock">
+                
                     <div class="firstblockphoto">
                         <div class="ImgDivPost1">
                             <img class="imgphoto" src=@item.ImgUrl />
@@ -39,35 +45,90 @@
                             <p class="fontMax2">Rivne</p>
                         </div>
                         <div class="btndiv">
-                            <button class="morebtn"></button>
+                            <button id="PointBtn" data-id="@i.Id" class="morebtn"></button>
                         </div>
                     </div>
                     <div class="MainImgdiv">
-                        <button onclick="" class="rigthBtn"></button>
-                        <div class="MainImgdiv2">
+                        <button id="btnright" class="rigthBtn"></button>
+                    <button id="btnleft" class="leftBtn"></button>
+
+                        <div id="MainDivPosAbs" class="MainImgdiv2">
                             @foreach (var url in @i.ImgUrls)
                             {
-                                <img class="ImgUrlUp"
+                                <img  class="ImgUrlUp"
                                      src=@url.Url />
                             }
                         </div>
                         
                         
                     </div>
-                    <div class="MainImgdiv1"></div>
+                    <div class="MainImgdiv1">
+                        <button class="LikeBtn"></button>
+                        <button class="CommentBtn"></button>
+                    <button class="PlaneBtn"></button>
+
+
+                    </div>
+                  
+                    <div id="PointMenu-@i.Id"  class="pointMenu1">
+                            <div class="createdivpoint">
+                                <a asp-action="Delete" asp-route-id="@i.Id" class="poindInBtnDel"><p class="BackTx">Delete</p></a>
+                                <button class="poindInBtn"><p class="BackTx">Edit</p></button>
+                                <button class="poindInBtnBack"><p class="BackTx">Сancel</p></button>
+                            </div>
+                    </div>
                     <div class="MainDiv22">
-                    @foreach (var items in @i.Coments)
+                    @if (@i.Coments != null)
+                    {
+                        @foreach (var items in @i.Coments)
                         {
-                        @* <p>@items.Message</p> *@
+
                             if (@items.UserId == @i.UserId)
                             {
-                                <p><span class="UserNameSpan">@items.User.NickName</span> @items.Message</p>
+                                <p class="ComentsCount1"><span class="UserNameSpan">@items.User.NickName</span> @items.Message</p>
+
                             }
+
                         }
-                </div>
+                        <p class="ComentsCount">View all comments( @i.Coments.Count(q => q.PostId == @i.Id) )</p>
+                    }
+                   
+
+
+                 </div> 
                 </div>
 
-         
+            @* <div id="displaycreate" class="createnewpost">
+                <div class="maincreatediv">
+                    
+
+                    <div class="createdivadd">
+                       <div class="text-center">
+                           
+                        </div> 
+                    </div> 
+                </div>
+            </div> *@
+
+            <div id="displaycreate" class="pointMenu2">
+                <button id="backbtn">back</button>
+                <div class="createdivadd">
+                    <div class="UpMenuDiv">
+                        <p>
+                            Creating a publication
+                        </p>
+                    </div>
+                    <div class="strechdiv">
+                        <p>Drag and drop photos and videos here</p>
+                        <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+                            <input class="fileuploadcl" type="file" name="fileUp" />
+                            <input class="enterclass" type="text" name="Message" placeholder="Enter product title" />
+                            <input class="sumbitbtn" type="submit" value="Upload File" />
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
             
            
         }
@@ -76,3 +137,72 @@
    
    
 </div>
+
+
+@section Scripts {
+    <script>
+        const elem = document.getElementById("MainDivPosAbs");
+        const btn = document.getElementById("btnright");
+
+
+        btn.addEventListener("click", () => {
+
+                elem.style.left = "-450px";
+
+        })
+
+        const btn2 = document.getElementById("btnleft");
+         btn2.addEventListener("click", () => {
+
+                elem.style.left = "0px";
+
+        })
+        const createbtns = document.getElementById("createbtn");
+        const dcreate = document.getElementById("displaycreate");
+        const cbody = document.getElementById("bodycrate");
+        const backbtn = document.getElementById("backbtn");
+        const PointMenu = document.querySelectorAll(".pointMenu1");
+        const PointBtn12 = document.querySelectorAll(".morebtn");
+        const poindInBtnBack = document.querySelectorAll(".poindInBtnBack");
+
+   
+
+
+        createbtns.addEventListener("click", () => {
+
+                cbody.style.overflowY = "hidden";
+                dcreate.style.display = "flex";
+
+        })
+        backbtn.addEventListener("click",()=>{
+             cbody.style.overflowY = "auto";
+             dcreate.style.display = "none";
+        })
+        //         for (let i of PointBtn12) {
+        //     i.addEventListener("click", () => {
+        //         cbody.style.overflowY = "hidden";
+        //         PointMenu.style.display = "flex";
+        //     });
+        // }
+        PointBtn12.forEach(i => {
+            i.addEventListener("click",() =>
+            {
+                let id = i.dataset.id;
+                let menu = document.querySelector(`#PointMenu-${id}`);
+                cbody.style.overflowY = "hidden";
+                menu.style.display = "flex";
+            })
+        });
+        poindInBtnBack.forEach(i => {
+            i.addEventListener("click",() =>
+            {
+
+        
+                cbody.style.overflowY = "auto";
+                PointMenu.forEach(i => i.style.display = "none");
+
+            })
+        });
+    
+    </script>
+}

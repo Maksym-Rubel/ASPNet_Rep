@@ -7,3 +7,4 @@ const [positionNum, setpositionNum] = useState(0);
 function rigthBtnSet() {
     setpositionNum(prev => prev + 450);
 }
+

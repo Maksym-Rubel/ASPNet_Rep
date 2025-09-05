@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using _02_Exam_Social_Network.Data;
 
@@ -10,9 +11,11 @@ using _02_Exam_Social_Network.Data;
 namespace _02_Exam_Social_Network.Migrations
 {
     [DbContext(typeof(SNetworkDbContext))]
-    partial class SNetworkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250904170837_UpdateNew")]
+    partial class UpdateNew
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

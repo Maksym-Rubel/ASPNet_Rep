@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="bodycrate">
+    
     <div class="leftMenu">
         <div class="FirstBlock"></div>
         <div class="SecondBlock">
@@ -25,12 +28,33 @@
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/reelslight.png" />Reels</a>
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Messages</a>
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/heartlight.png" />Notification</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/createlight.png" />Create</a>
+            <a asp-action"Create" id="createbtn" class="buttondef"><img class="buttonimg" src="~/icons/createlight.png" />Create</a>
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Profile</a>
         </div>
         <div class="ThirdBlock"></div>
-    </div>
-    
+    </div> 
+    @* <div id="displaycreate" class="createnewpost">
+        <div class="maincreatediv">
+            <button id="backbtn">back</button> *@
+
+            @* <div class="createdivadd">
+                <div class="text-center">
+
+                    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+                        <input type="file" name="fileUp" />
+                        <input type="submit" value="Upload File" />
+                        <div class="col-md-8">
+                            <label asp-for="Message" class="form-label">Title</label>
+                            <input asp-for="Message" type="text" class="form-control" placeholder="Enter product title">
+                           <span asp-validation-for="Message" class="small text-danger"></span> 
+                        </div>
+                    </form>
+                </div> 
+
+
+             </div> *@
+    @*     </div>
+    </div> *@
     <div class="container">
         <main role="main" >
             @RenderBody()

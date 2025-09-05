@@ -24,8 +24,12 @@ body {
   margin:0px;
   display:flex;
   flex-direction:row;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
-
+body::-webkit-scrollbar{
+    display:none;
+}
 .leftMenu {
     position:fixed;
     margin: 0px;
@@ -254,16 +258,42 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+/*    justify-content:space-around;*/
 /*    background-color:forestgreen;*/
     /*    padding-left:5px;*/
     padding:0px;
 }
-
+.btndiv {
+    width: stretch;
+    max-width:100px;
+    height: 50px;
+    display:flex;
+    justify-content:right
+    /*    background-color:red;*/
+}
+.morebtn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    background-image: url(/icons/dots.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+.morebtn:hover
+{
+    opacity:0.7;
+}
+.morebtn:active {
+    opacity: 0.5 ;
+}
 .firstblockcolumn {
     display: flex;
     /*    background-color: antiquewhite;*/
     width: stretch;
-    max-width:300px;
+    max-width: 300px;
     height: 50px;
     margin-left: 5px;
     /*    margin-right:50px;*/
@@ -273,7 +303,7 @@ a {
     gap: 0px;
     justify-content: center;
     /*    align-items:center;*/
-/*    background-color:rebeccapurple;*/
+    /*    background-color:rebeccapurple;*/
 }
 .fontMax {
     margin: 0px;
@@ -285,20 +315,8 @@ a {
     font-weight: 200;
     font-size: 11px;
 }
-.btndiv
-{
-    width:50px;
-    height:50px;
-/*    background-color:red;*/
-}
-.morebtn
-{
-    width:50px;
-    height:50px;
-    background-color:transparent;
-    outline:none;
-    border:0;
-}
+
+
 .MainImgdiv
 {
     width:450px;
@@ -316,19 +334,17 @@ a {
     height: 600px;
     background-color: darkgrey;
     border-radius: 3px;
-/*    margin-top: 5px;*/
-/*    margin-left:400px;*/
-    position:absolute;
-/*    left:-450px;*/
-/*left:1px;*/
+    /*    margin-top: 5px;*/
+    /*    margin-left:400px;*/
+    position: absolute;
+    /*    left:-450px;*/
+    /*left:1px;*/
     display: flex;
     flex-direction: row;
+    left: 0px;
+    transition: left 0.2s ease-in-out;
 }
-.MainImgdiv1 {
-    width: 100%;
-    height: 50px;
-    background-color: darkseagreen;
-}
+
 .ImgUrlUp
 {
    height:101%;
@@ -354,29 +370,314 @@ a {
 /*    margin:10px;*/
     margin-left:5px;
 }
-.rigthBtn
-{
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:50px;
-    height:50px;
-    z-index:1;
-}
+
 .MainDiv22 {
     width: 100%;
     height: 50px;
-    /*    background-color:red;*/
+/*        background-color:red;*/
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     color: white;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 13px;
+    flex-direction:column;
+    gap:0px;
+    padding:0px;
+    
 }
 .UserNameSpan
 {
     font-weight:400;
+    margin:0px;
+}
+.ComentsCount1 {
+    margin: 0px;
+}
+.ComentsCount {
+    font-size: 13px;
+    color: #a8a8a8;
+    margin: 0px;
+    margin-top: 7px;
+}
+
+.LikeBtn
+{
+    width:23px;
+    height:23px;
+    background-color:transparent;
+    outline:none;
+    border:0;
+    background-image:url(/icons/heartlight.png);
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.MainImgdiv1 {
+    width: 100%;
+    height: 50px;
+/*    background-color: darkseagreen;*/
+    display:flex;
+    flex-direction:row;
+/*    justify-content:center;*/
+    align-items:center;
+    gap:15px;
+}
+.LikeBtn:hover
+{
+    opacity:0.6;
+}
+.LikeBtn:active {
+    opacity: 0.4;
+}
+.CommentBtn {
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    background-image: url(/icons/comment.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    .CommentBtn:hover {
+        opacity: 0.6;
+    }
+    .CommentBtn:active {
+        opacity: 0.4;
+    }
+
+.PlaneBtn {
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    background-image: url(/icons/plane.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    .PlaneBtn:hover {
+        opacity: 0.6;
+    }
+
+
+    .PlaneBtn:active {
+        opacity: 0.4;
+    }
+
+.rigthBtn {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    transform: translate(0,-50%);
+    border:0;
+    outline:none;
+    border-radius:50%;
+    opacity:0.6;
+
+}
+
+.leftBtn {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+
+    z-index: 1;
+    transform: translate(0,-50%);
+ 
+
+
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.createnewpost {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /*    overflow:hidden;*/
+    /*    background-color: #262626;*/
+    background-color: rgba(4, 4, 4, 0.6);
+    /*    transform:translate(-50%,-50%);*/
+    /*    top:50vw;
+    left:50vh;*/
+    z-index: 5;
+    /*    border-radius:30px;*/
+    opacity: 1;
+}
+.maincreatediv {
+    width:100%;
+    height:100%;
+/*    background-color:red;*/
+    position:relative;
+}
+.maincreatediv1 {
+    width: 100%;
+    height: 100%;
+/*        background-color:red;*/
+    position: relative;
+}
+
+.createdivpoint {
+    position: absolute;
+    width: 400px;
+    height: 151px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 11;
+    background-color: #262626;
+    border-radius: 30px;
+    overflow:hidden;
+    gap:0px;
+}
+
+    #backbtn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 0px;
+    }
+.pointMenu1 {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(4, 4, 4, 0.45);
+    position: fixed;
+    top:0;
+    left:0;
+    display:none;
+}
+.pointMenu2 {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(4, 4, 4, 0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.poindInBtn {
+    width: 100%;
+    height: 50px;
+    /*    border-radius: 30px;*/
+    border: 0;
+    background-color: #262626;
+    border-bottom: 0.5px solid #363636;
+    outline: none;
+    margin: 0px;
+    color: #eeeeee;
+    font-size: 13px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poindInBtnBack {
+    width: 100%;
+    height: 50px;
+    /*    border-radius: 30px;*/
+    border: 0;
+    background-color: #262626;
+    /*    border-bottom: 0.5px solid #363636;*/
+    outline: none;
+    margin: 0px;
+    color: #eeeeee;
+    font-size: 13px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poindInBtnDel {
+    width: 100%;
+    height: 50px;
+    /*    border-radius: 30px;*/
+    border: 0;
+    background-color: #262626;
+    border-bottom: 0.5px solid #363636;
+    outline: none;
+    margin: 0px;
+    color: #ed4956;
+    font-size: 13px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BackTx
+{
+    margin:0;
+}
+.createdivadd {
+    position: absolute;
+    width: 470px;
+    height: 520px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 11;
+    background-color: #262626;
+    border-radius: 30px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.UpMenuDiv {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-bottom: 1px solid #363636;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+.strechdiv {
+    width: 100%;
+    height: stretch;
+/*    background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fileuploadcl {
+}
+.enterclass
+{
+    display:none;
+}
+.sumbitbtn
+{
+    display:none;
 }

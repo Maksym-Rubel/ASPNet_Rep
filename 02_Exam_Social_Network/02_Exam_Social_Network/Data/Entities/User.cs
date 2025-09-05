@@ -1,4 +1,5 @@
 ﻿namespace _02_Exam_Social_Network.Data.Entities
+
 {
     public class User
     {

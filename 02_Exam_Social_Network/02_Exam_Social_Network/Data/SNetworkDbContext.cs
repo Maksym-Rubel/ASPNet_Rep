@@ -110,46 +110,46 @@ namespace _02_Exam_Social_Network.Data
     
 
             });
-            modelBuilder.Entity<Post>().HasData(new List<Post>()
-            {
+            //modelBuilder.Entity<Post>().HasData(new List<Post>()
+            //{
 
-                new Post() {
-                    Id = 1,
-                    Location = "",
-                    UserId = 1,
-                    }
-            });
-            modelBuilder.Entity<PostImage>().HasData(new List<PostImage>()
-            {
+            //    new Post() {
+            //        Id = 1,
+            //        Location = "",
+            //        UserId = 1,
+            //        }
+            //});
+            //modelBuilder.Entity<PostImage>().HasData(new List<PostImage>()
+            //{
 
-                new PostImage() {
-                    Id = 1,
-                    Url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkYcWvynkUjRz8ME31vQoP2dyJXzLYObCQA&s",
-                    PostId = 1,
-                    },
-                new PostImage() {
-                    Id = 2,
-                    Url = "https://i.guim.co.uk/img/media/87929f76cb1cbd05350d5a7b8fe759857a2e7e78/388_698_3299_1979/master/3299.jpg?width=1200&quality=85&auto=format&fit=max&s=2e1386e2df9c479f2fe3061bed3ac6eb",
-                    PostId = 1,
-                    }
-            });
-            modelBuilder.Entity<Coment>().HasData(new List<Coment>()
-            {
+            //    new PostImage() {
+            //        Id = 1,
+            //        Url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkYcWvynkUjRz8ME31vQoP2dyJXzLYObCQA&s",
+            //        PostId = 1,
+            //        },
+            //    new PostImage() {
+            //        Id = 2,
+            //        Url = "https://i.guim.co.uk/img/media/87929f76cb1cbd05350d5a7b8fe759857a2e7e78/388_698_3299_1979/master/3299.jpg?width=1200&quality=85&auto=format&fit=max&s=2e1386e2df9c479f2fe3061bed3ac6eb",
+            //        PostId = 1,
+            //        }
+            //});
+            //modelBuilder.Entity<Coment>().HasData(new List<Coment>()
+            //{
 
-                new Coment() {
-                    Id = 1,
-                    PostId = 1,
-                    UserId = 3,
-                    Message = "Hello maxyyy42"
-                },
-                new Coment() {
-                    Id = 2,
-                    PostId = 1,
-                    UserId = 1,
-                    Message = "my first post"
-                }
+            //    new Coment() {
+            //        Id = 1,
+            //        PostId = 1,
+            //        UserId = 3,
+            //        Message = "Hello maxyyy42"
+            //    },
+            //    new Coment() {
+            //        Id = 2,
+            //        PostId = 1,
+            //        UserId = 1,
+            //        Message = "my first post"
+            //    }
 
-            });
+            //});
 
         }
 
