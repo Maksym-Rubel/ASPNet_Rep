@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.cdnfonts.com/css/venn-trial" rel="stylesheet">
 </head>
 <body id="bodycrate">
     
@@ -28,8 +28,12 @@
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/reelslight.png" />Reels</a>
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Messages</a>
             <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/heartlight.png" />Notification</a>
-            <a asp-action"Create" id="createbtn" class="buttondef"><img class="buttonimg" src="~/icons/createlight.png" />Create</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Profile</a>
+            @* <a asp-action="Create" id="createbtn" class="buttondef"><img class="buttonimg" src="~/icons/createlight.png" />Create</a> *@
+
+            <button id="createbtn" class="buttondef">
+                <img class="buttonimg" src="~/icons/createlight.png" />Create</>
+                </button>
+            <a asp-action="Profile" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Profile</a>
         </div>
         <div class="ThirdBlock"></div>
     </div> 
@@ -55,16 +59,14 @@
              </div> *@
     @*     </div>
     </div> *@
-    <div class="container">
+    <div  class="container">
         <main role="main" >
             @RenderBody()
         </main>
     </div>
-    <div class="rightMenu">
-        
-    </div>
 
-   
+
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

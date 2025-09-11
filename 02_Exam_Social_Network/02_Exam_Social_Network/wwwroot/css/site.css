@@ -114,18 +114,62 @@ a {
     height:25px;
     margin-right:10px;
 }
-.container
-{
-    margin-left:250px;
-/*    margin-right:700px;*/
-    width: stretch;
-    height:3500px;
-    background-color:black;
-    color:white;
-    padding: 15px;
-    display:flex;
-    justify-content:center;
-/*    align-items:center;*/
+.container {
+    margin-left: 250px;
+    /*    margin-right:700px;*/
+    width: 100%;
+    height: 3500px;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position:relative;
+    /*    align-items:center;*/
+}
+
+.fulldiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*    background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+}
+.rightMenu {
+    /*    width: 700px;*/
+    /*        background-color: red;*/
+    margin: 0px;
+    /*    gap: 10px;*/
+    /*display:flex;
+flex-direction:column;*/
+}
+.RowDiv {
+    display: flex;
+    flex-direction:row;
+    /*    width:100%;
+    height:100%;*/
+/*    flex-direction: row;*/
+    /*    justify-content:end;*/
+    gap: 0px;
+    width: 70%;
+/*    background-color: orangered*/
+    /*    align-items:end;*/
+    /*    justify-content:space-between;
+    align-content:space-around;*/
+}
+.PhotoBack {
+    width: 100%;
+    height: 95%;
+    /*    background-color: red;*/
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:start;
+    flex-direction: column;
 }
 /*.rightMenu {
     margin: 0px;
@@ -135,24 +179,28 @@ a {
     flex-direction: column;
     background-color: black;
     background: black;*/
-    /*    justify-content:*/
+/*    justify-content:*/
 /*}*/
-
-.rightMenu{
-    width:700px;
-    background-color:black;
-
-}
-
 .StoriesBack {
-    width: stretch;
+    width: 100%;
     height: 120px;
-    background-color: black;
+    /*    margin-left: 20px;*/
+/*    background-color: blue;*/
     display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:right;
-    gap:15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        gap:15px;
+}
+.fullBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 95px;
+/*    background-color: darkred;*/
+    /*    background-color:rebeccapurple;*/
 }
 .StoriesItem {
     display: flex;
@@ -171,7 +219,7 @@ a {
         transform: scale(0.95);
         opacity: 0.8;
     }
-        
+
 .LineBack {
     width: 95px;
     height: 95px;
@@ -213,14 +261,7 @@ a {
     object-fit: cover;
     object-position: center;
 }
-.fullBlock
-{
-    display:flex;
-    flex-direction:column;
-    gap:0px;
-    margin:0px;
-    padding:0px;
-}
+
 .textback {
     /*    background-color: red;*/
     gap: 0px;
@@ -231,16 +272,7 @@ a {
     font-size:12px;
     /*    justify-content:center;*/
 }
-.PhotoBack
-{
-    width:100%;
-    height:95%;
-/*    background-color: red;*/
-    display:flex;
-    align-items:center;
-    padding:10px;
-    flex-direction:column;
-}
+
 .mainblock {
     width: 450px;
     height: 800px;
@@ -327,35 +359,34 @@ a {
     display:flex;
     flex-direction:row;
     position:relative;
-    overflow:hidden
+    overflow:hidden;
 }
+
 .MainImgdiv2 {
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-color: darkgrey;
     border-radius: 3px;
-    /*    margin-top: 5px;*/
-    /*    margin-left:400px;*/
     position: absolute;
-    /*    left:-450px;*/
-    /*left:1px;*/
     display: flex;
     flex-direction: row;
     left: 0px;
     transition: left 0.2s ease-in-out;
 }
 
-.ImgUrlUp
-{
-   height:101%;
-   width:100%;
-    object-fit:cover;
-}
-.imgphoto {
+.ImgUrlUp {
+     flex-basis:100%;
+     flex-shrink:0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.imgphoto {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center center;
 /*    border-radius: 100px;*/
 }
 .ImgDivPost1 {
@@ -648,7 +679,9 @@ a {
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    transition: width 50ms ease-in-out;
 }
+
 .UpMenuDiv {
     width: 100%;
     height: 40px;
@@ -662,22 +695,428 @@ a {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
 }
-.strechdiv {
-    width: 100%;
-    height: stretch;
-/*    background-color: red;*/
+
+.fileuploadcl {
+
+    display:none;
+
+}
+.enterclass
+{
+    width:100%;
+    height:100px;
+    display:none;
+    box-sizing:border-box;
+    resize:none;
+    outline:none;
+    background-color:transparent;
+    border:0;
+    color:white;
+    font-size:15px;
+}
+    .enterclass::-webkit-scrollbar {
+        display: none;
+    } 
+    .sumbitbtn {
+        display: none;
+    }
+.SelectBrncl 
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: "Venn Medium";
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #4a5df9;
+    color: white;
+    border: 0;
+    outline: none;
+    display:block;
+    justify-items:center;
+    align-items:center;
+/*    background-color:black;*/
+}
+
+#form2 {
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    font-family: "Venn Medium";
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #4a5df9;
+    color: white;
+    border: 0;
+    outline: none;
+}
+.PSelect {
+    margin: 0px;
+}
+.MainTextBlock {
+    font-family: 'Venn Trial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    display:block;
+}
+.createdivaddafter {
+    position: absolute;
+    width: 800px;
+    height: 520px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 11;
+    background-color: #262626;
+    border-radius: 30px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: width 50ms ease-in-out;
 }
-.fileuploadcl {
+.strechdiv332 {
+    width: 100%;
+    height: stretch;
+/*        background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
 }
-.enterclass
+.FavDiv {
+    width: 100%;
+    height:stretch;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.strechdivafter {
+    width: 100%;
+    height: stretch;
+    /*    background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /*    background-image: url()*/
+}
+.imageOverflow
 {
+    width:500px;
+    height:100%;
     display:none;
+/*    background-color:rebeccapurple;*/
 }
-.sumbitbtn
+.imagechange {
+    width: 500px;
+    height: 500px;
+}
+.enterClass22
 {
+    width:stretch;
+    height:100%;
+    padding:20px;
+    box-sizing:border-box;
     display:none;
+
+/*    background-color:black;*/
+}
+
+.ColumnDiv
+{
+    width:stretch;
+
+    display:flex;
+    flex-direction:column;
+/*    background-color:blue;*/
+    height:stretch;
+    justify-content:center;
+    align-content:center;
+/*    margin:0px;
+    margin-left:100px;*/
+}
+
+.profileMini
+{
+    display:flex;
+    flex-direction:row;
+/*    gap:10px;*/
+    margin-bottom:10px;
+
+}
+.ImgDivMin
+{
+    width:50px;
+    height:50px;
+/*    background-clip:border-box;*/
+    overflow:hidden;
+    border-radius:50%;
+}
+.ImgMini {
+    width: 100%;
+/*    height: 100%;*/
+    object-fit: contain;
+    object-position: center center;
+}
+.TextMini {
+    font-family: "Venn Medium";
+    margin-left:10px;
+    font-size:14px;
+}
+
+.TextMiniDiv {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.MainProfileDiv
+{
+    margin-top:20px;
+    width:clamp(20vw,1100px,61vw);
+    height:stretch;
+/*    background-color:red;*/
+}
+.FirstRowProfile
+{
+    display:flex;
+    width:100%;
+    height:220px;
+/*    background-color:blue;*/
+}
+
+.ProfileText {
+    flex:1;
+/*    background-color: blueviolet;*/
+}
+
+.SecondRowProfile {
+    width: 100%;
+    height: 130px;
+/*    background-color: aquamarine;*/
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing:border-box;
+}
+.FirstMiniProf {
+    width: 100%;
+    height: 30%;
+    /*    background-color: burlywood;*/
+    display: flex;
+    flex-direction: row;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 0px;
+    margin-bottom: 0px;
+}
+#NickNameId
+{
+    font-size:21px;
+    margin:0px;
+    margin-right:20px;
+}
+
+.firstRowBtn {
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    background-color: #25292e;
+    color: white;
+    font-size: 14px;
+    font-family: "Venn Medium";
+    margin:5px;
+   
+}
+    .firstRowBtn:hover {
+        background-color: #363c44;
+    }
+
+.MagrinP {
+    margin: 0px;
+}
+.nextPub {
+    margin-top: 0px;
+    font-family: "Venn Medium";
+    font-weight: 300;
+    color: #a8a8a8;
+    margin-right: 15px;
+}
+
+.numberPub {
+    margin-top: 0px;
+    font-family: "Venn Medium";
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: white;
+/*    width: 10px;*/
+}
+.RowProfile
+{
+    display:flex;
+    flex-direction:row;
+    gap:7px;
+    margin-right: 5px;
+
+}
+.ImageProfileBack {
+    width: 290px;
+    height: 100%;
+/*    background-color: antiquewhite;*/
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.ImageBack
+{
+/*    background-color:rebeccapurple;*/
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    
+}
+.MainDivBlock {
+    margin-top:50px;
+    width: 100%;
+    height: 50px;
+/*    background-color:aqua;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:end;
+    border-bottom: 1px solid #2b3036;
+    gap:120px;
+}
+.MainDivBlockBtnActive {
+    width: 65px;
+    height: 40px;
+    border:0;
+    outline:0;
+    background-color:transparent;
+    border-bottom: 2px solid white;
+    background: url(/icons/icongrid.png);
+    background-position:center center;
+    background-size:20px;
+    background-repeat:no-repeat;
+}
+.MainDivBlockBtnNonActive {
+    width: 65px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+/*    border-bottom: 2px solid white;*/
+}
+.PhotoDiv {
+    width: 100%;
+    /*    min-width: 200px;*/
+    /*    background-color: aqua;*/
+    /*    height: stretch;*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+}
+.PhotoBlock {
+    /*    width:33.3%;*/
+    height: 380px;
+    background-color: transparent;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.PhotoBlock:hover .BlurDiv {
+    opacity: 1;
+    transition: all 50ms ease-in-out;
+}
+    .PhotoBlock:hover .InfoDivProfile {
+        opacity: 1;
+/*        transition: all 50ms ease-in-out;*/
+    }
+.ImgEditds {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.InfoDivProfile
+{
+    width:100%;
+    height:30px;
+/*    background-color:red;*/
+    position:absolute;
+    transform:translateY(-50%);
+    top:50%;
+    z-index:15;
+    display:flex;
+    flex-direction:row;
+    opacity:0;
+}
+.backInfo {
+    z-index:15;
+    width: 50%;
+    height: 100%;
+/*    background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    padding-right:10px;
+}
+.backInfo1 {
+    width: 50%;
+    height: 100%;
+/*    background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.ImgInfo {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.BlurDiv {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 4, 4, 0.6);
+/*background-color:rebeccapurple;*/
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
 }

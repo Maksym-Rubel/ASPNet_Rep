@@ -1,6 +1,7 @@
 wwwroot\favicon.ico
 wwwroot\icons\1b77806dfbc58c918574c49694d9cd9d (1).jpg
 wwwroot\icons\1b77806dfbc58c918574c49694d9cd9d.jpg
+wwwroot\icons\37f2de45847a44b807d84f5610d7698e.jpg
 wwwroot\icons\9205d6bc591a8f62b5350f34c0df6a23.jpg
 wwwroot\icons\add.png
 wwwroot\icons\Apple Music Installer.exe
@@ -10,9 +11,11 @@ wwwroot\icons\dots.png
 wwwroot\icons\download.png
 wwwroot\icons\heart.png
 wwwroot\icons\heartlight.png
+wwwroot\icons\heartlightfill.png
 wwwroot\icons\home.png
 wwwroot\icons\homelight.png
 wwwroot\icons\icon.jpg
+wwwroot\icons\icongrid.png
 wwwroot\icons\iconlight.png
 wwwroot\icons\magnifying-glass.png
 wwwroot\icons\making-groupchats-v0-vzlvaw8el9le1.webp
@@ -87,5 +90,7 @@ wwwroot\uploadPostFromUser\2a3a098499d413ba8776f74031e5c4aa.jpg
 wwwroot\uploadPostFromUser\4555172401_w600_h600_4555172401.webp
 wwwroot\uploadPostFromUser\477ceed04f9ecba579c035e827a48b8a.jpg
 wwwroot\uploadPostFromUser\96633009-d1818000-1318-11eb-9f1d-7f914f4ccb16.gif
+wwwroot\uploadPostFromUser\p.jpg
+wwwroot\uploadPostFromUser\p1.jpg
 wwwroot\uploadPostFromUser\photo_2025-05-25_11-29-14.jpg
 wwwroot\css\site.css

@@ -31,39 +31,47 @@ namespace _02_Exam_Social_Network.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Index(IFormFile fileUp,string Message)
+        public async Task<IActionResult> Index(IFormFileCollection fileUp, string Message)
         {
             string uploadFolder = Path.Combine(_webHost.WebRootPath, "uploadPostFromUser");
             if (!Directory.Exists(uploadFolder))
             {
                 Directory.CreateDirectory(uploadFolder);
             }
-            if (fileUp == null || fileUp.Length == 0)
+            if (fileUp.Count > 0)
             {
-                ModelState.AddModelError("", "Файл не вибрано або він порожній");
-                return View();
+                ctx.Posts.Add(new Post
+                {
+                    UserId = 1,
+                });
+                ctx.SaveChanges();
+                foreach (var file in fileUp)
+                {
+                    if (file == null || file.Length == 0)
+                    {
+                        ModelState.AddModelError("", "Файл не вибрано або він порожній");
+                        return View();
+                    }
+                    string fileName = file.FileName;
+                    string fileSavePath = Path.Combine(uploadFolder, fileName);
+
+                    using (FileStream stream = new FileStream(fileSavePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+
+
+                    //int length = ctx.PostImages.Count();
+                    ctx.PostImages.Add(new PostImage
+                    {
+                        PostId = ctx.Posts.OrderByDescending(p => p.Id).FirstOrDefault().Id,
+                        Url = "/uploadPostFromUser/" + fileName
+                    });
+
+                }
+                ctx.SaveChanges();
             }
-            string fileName = fileUp.FileName;
-            string fileSavePath = Path.Combine(uploadFolder, fileName);
 
-            using (FileStream stream = new FileStream(fileSavePath, FileMode.Create))
-            {
-                await fileUp.CopyToAsync(stream);
-            }
-            ctx.Posts.Add(new Post
-            {
-                UserId = 1,
-
-
-            });
-            ctx.SaveChanges();
-
-            int length = ctx.PostImages.Count(); 
-            ctx.PostImages.Add(new PostImage
-            {
-                PostId = ctx.Posts.OrderByDescending(p => p.Id).FirstOrDefault().Id,
-                Url = "/uploadPostFromUser/" + fileName
-            });
             ctx.Coments.Add(new Coment
             {
                 UserId = 1,
@@ -75,12 +83,65 @@ namespace _02_Exam_Social_Network.Controllers
 
             return RedirectToAction("HomeBtn");
         }
+        //public async Task<IActionResult> Index(IFormFile fileUp, string Message)
+        //{
+        //    string uploadFolder = Path.Combine(_webHost.WebRootPath, "uploadPostFromUser");
+        //    if (!Directory.Exists(uploadFolder))
+        //    {
+        //        Directory.CreateDirectory(uploadFolder);
+        //    }
+        //    if (fileUp == null || fileUp.Length == 0)
+        //    {
+        //        ModelState.AddModelError("", "???? ?? ??????? ??? ??? ????????");
+        //        return View();
+        //    }
+        //    string fileName = fileUp.FileName;
+        //    string fileSavePath = Path.Combine(uploadFolder, fileName);
+
+        //    using (FileStream stream = new FileStream(fileSavePath, FileMode.Create))
+        //    {
+        //        await fileUp.CopyToAsync(stream);
+        //    }
+        //    ctx.Posts.Add(new Post
+        //    {
+        //        UserId = 1,
+
+
+        //    });
+        //    ctx.SaveChanges();
+
+        //    int length = ctx.PostImages.Count();
+        //    ctx.PostImages.Add(new PostImage
+        //    {
+        //        PostId = ctx.Posts.OrderByDescending(p => p.Id).FirstOrDefault().Id,
+        //        Url = "/uploadPostFromUser/" + fileName
+        //    });
+        //    ctx.Coments.Add(new Coment
+        //    {
+        //        UserId = 1,
+        //        PostId = ctx.Posts.OrderByDescending(p => p.Id).FirstOrDefault().Id,
+        //        Message = Message
+
+        //    });
+        //    ctx.SaveChanges();
+
+        //    return RedirectToAction("HomeBtn");
+        //}
         public IActionResult HomeBtn()
         {
             var model = ctx.Users
                 .Include(u=> u.Posts)
                     .ThenInclude(p=> p.ImgUrls)
                 .Include(u=> u.Coments)
+                .ToList();
+            return View(model);
+        }
+        public IActionResult Profile()
+        {
+            var model = ctx.Users
+                .Include(u => u.Posts)
+                    .ThenInclude(p => p.ImgUrls)
+                .Include(u => u.Coments)
                 .ToList();
             return View(model);
         }

@@ -1,0 +1,71 @@
+﻿@using _02_Exam_Social_Network.Data.Entities
+@model List<User>
+
+@foreach(var item in Model)
+{
+    if(item.Id == 1)
+    {
+        <div class="MainProfileDiv">
+            <div class="FirstRowProfile">
+                <div class="ImageProfileBack">
+                    <div class="ImageBack"><img class="ImgMini" src="@item.ImgUrl" /></div>
+                </div>
+                <div class="ProfileText">
+                    <div class="FirstMiniProf">
+                        <p id="NickNameId">@item.NickName</p>
+                        <button class="firstRowBtn"> <p class="MagrinP">Edit profile</p></button>
+                        <button class="firstRowBtn"> <p class="MagrinP">View archive</p></button>
+
+                    </div>
+                    <div class="RowProfile">
+                        <p class="nextPub"><span class="numberPub">0</span>publications</p>
+                        <p class="nextPub"><span class="numberPub">23</span>subscribers</p>
+                        <p class="nextPub"><span class="numberPub">28</span>subscriptions</p>
+
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="SecondRowProfile">
+                <div class="fullBlock">
+                    <div class="StoriesItem">
+                        <img class="ImgPos" src=@item.ImgUrl />
+                    </div>
+                    <p class="textback">@item.NickName</p>
+                </div>
+            </div>
+            <div class="MainDivBlock">
+                <button class="MainDivBlockBtnActive"></button>
+                <button class="MainDivBlockBtnNonActive"></button>
+                <button class="MainDivBlockBtnNonActive"></button>
+
+            </div>
+            <div class="PhotoDiv">
+
+                @foreach(var i in @item.Posts)
+                {
+                   if(@i.UserId == 1)
+                    {
+                        var Photo = @i.ImgUrls.FirstOrDefault(p => p.PostId == @i.Id);
+                        if(Photo != null)
+                        {
+                            <div class="PhotoBlock">
+                                <img class="ImgEditds" src="@Photo.Url" alt="Text" />
+                                <div class="BlurDiv"></div>
+                                <div class="InfoDivProfile">
+                                    <div class="backInfo"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>175</p></div>
+                                    <div class="backInfo1"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>175</p></div>
+
+                                </div>
+
+                            </div>
+
+                        }
+                      
+                    }
+                }
+            </div>
+        </div>
+    }
+}
