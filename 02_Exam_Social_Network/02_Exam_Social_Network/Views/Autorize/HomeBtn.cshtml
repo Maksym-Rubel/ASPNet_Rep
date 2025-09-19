@@ -1,0 +1,381 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using _02_Exam_Social_Network.Data.Entities
+@* @using _02_Exam_Social_Network.js *@
+@model List<User>
+@{
+    ViewData["Id"] = "0";
+}
+
+
+<div class="fulldiv">
+ 
+    <div class="RowDiv">
+        <div class="ColumnDiv">
+            <div class="StoriesBack">
+                @foreach (var item in Model)
+                {
+
+                    <div class="fullBlock">
+                        <div class="StoriesItem">
+                                <img class="ImgPos" src=@item.ImgUrl />
+                        </div>
+
+                        <p class="textback">@item.UserName</p>
+                    </div>
+
+                }
+            </div>
+           <div class="PhotoBack">
+                @foreach (var item in Model)
+                {
+                    @foreach (var i in @item.Posts.OrderByDescending(m=> m.Id))
+                    {
+
+                        <div class="mainblock">
+                          
+
+                            <div class="firstblockphoto">
+                                <div class="ImgDivPost1">
+                                    <img class="imgphoto" src=@item.ImgUrl />
+
+                                </div>
+                                <div class="firstblockcolumn">
+                                    <p class="fontMax">@item.UserName</p>
+                                    <p class="fontMax2">Rivne</p>
+                                </div>
+                                <div class="btndiv">
+                                    <button id="PointBtn" data-id="@i.Id" class="morebtn"></button>
+                                </div>
+                            </div>
+                            <div class="MainImgdiv">
+                                <button id="btnright" data-id="@i.Id" class="rigthBtn">@i.Id</button>
+                                <button id="btnleft" data-id="@i.Id" class="leftBtn">@i.Id</button>
+
+                                <div id="MainDivPosAbs-@i.Id" data-count="@i.ImgUrls.Count()" class="MainImgdiv2">
+                                    @foreach (var url in @i.ImgUrls)
+                                    {
+                                        <img class="ImgUrlUp"
+                                             src=@url.Url />
+                                    }
+                                </div>
+
+
+                            </div>
+                            <div class="MainImgdiv1">
+
+                                
+                                @if (item.PostUserLikes.Any(m => m.PostId == @i.Id && m.UserId == ViewBag.ProfileId))
+                                {
+                                    <a asp-action="DeleteLike" asp-controller="Autorize" asp-route-postId="@i.Id" id="LikeBtn-@i.Id" class="LikeBtnRed"></a>
+                                }
+                                else
+                                {
+                                    <a asp-action="AddLike" asp-controller="Autorize" asp-route-postId="@i.Id" id="LikeBtn-@i.Id" class="LikeBtn"></a>
+                                }
+                                
+
+                     
+                                <button class="CommentBtn" data-id="@i.Id">@i.Id</button>
+                                <button class="PlaneBtn"></button>
+
+
+                            </div>
+
+                            <div id="PointMenu-@i.Id" class="pointMenu1">
+                                <div class="createdivpoint">
+                                    <a asp-action="Delete" asp-route-id="@i.Id" class="poindInBtnDel"><p class="BackTx">Delete</p></a>
+                                    <button class="poindInBtn"><p class="BackTx">Edit</p></button>
+                                    <button class="poindInBtnBack"><p class="BackTx">Сancel</p></button>
+                                    
+                                </div>
+                            </div>
+                            <div class="MainDiv22">
+                                @if (@i.Coments != null)
+                                {
+                                    @foreach (var items in @i.Coments)
+                                    {
+
+                                        if (@items.UserId == @i.UserId)
+                                        {
+                                            <p class="ComentsCount1"><span class="UserNameSpan">@items.User.UserName</span> @items.Message</p>
+                                            <p>@ViewBag.ProfileId</p>
+                                        }
+
+                                    }
+                                    <p class="ComentsCount">View all comments( @i.Coments.Count(q => q.PostId == @i.Id) )</p>
+                                }
+
+
+
+                            </div>
+                        </div> 
+
+                        @* <div id="displaycreate" class="createnewpost">
+                <div class="maincreatediv">
+                    
+
+                    <div class="createdivadd">
+                       <div class="text-center">
+                           
+                        </div> 
+                    </div> 
+                </div>
+            </div> *@
+
+
+
+
+                    }
+
+                }
+
+
+            </div>
+        </div>
+        <div id="displaycreate" class="pointMenu2">
+            <button id="backbtn">back</button>
+            <div id="createBack" class="createdivadd">
+                <div class="UpMenuDiv">
+                    <p>
+                        Creating a publication
+                    </p>
+                </div>
+                <div id="divafterstr" class="strechdiv332">
+
+                    <p id="TextBtrn23" class="MainTextBlock">Drag and drop photos and videos here</p>
+                    <button id="SelectBtn" class="SelectBrncl" onfocus="defaultValue()"> <p class="PSelect">Select on computer</p></button>
+
+
+                    <div id="ImageTyppe" class="imageOverflow">
+                        @* <img class="imagechange" src="" alt="noimage" /> *@
+                    </div>
+                    <div id="entercls22" class="enterClass22">
+
+                        <form method="post" enctype="multipart/form-data" asp-controller="Autorize" asp-action="Index">
+                            <input onchange="changeWidth()" onfocus="defaultValue()" value="" id="SelectBtnAfter" class="fileuploadcl" type="file" multiple name="fileUp" />
+
+
+
+                            <textarea id="form1" class="enterclass" type="text" name="Message" placeholder="Enter product title"></textarea>
+                            <input id="form2" class="sumbitbtn" type="submit" value="Upload File" />
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="rightMenu">
+        @foreach (var items in Model)
+        {
+            <div class="profileMini">
+                <div class="ImgDivMin">
+                 <img class="ImgMini" src=@items.ImgUrl alt="Text" /> 
+
+                </div>
+                <div class="TextMiniDiv">
+                    <p class="TextMini">@items.UserName</p>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+<div id="particalContainer"></div>
+
+
+
+@section Scripts {
+    <script>
+
+        
+        const LikeBtn = document.querySelectorAll(".LikeBtn");
+        const LikeBtnRed = document.querySelectorAll(".LikeBtnRed");
+        LikeBtnRed.forEach(item =>{
+                item.addEventListener("click",function()
+                {
+                    localStorage.setItem('pageVerticalPostion',window.scrollY);
+                });
+        });
+        LikeBtn.forEach(item =>{
+                item.addEventListener("click",function()
+                {
+                    // this.style.backgroundImage = "url('/icons/heartred.png')";
+        
+                    localStorage.setItem('pageVerticalPostion',window.scrollY);
+                });
+        });
+        document.addEventListener("DOMContentLoaded", function() 
+        {
+            let pageVerticalPositionGet = localStorage.getItem('pageVerticalPostion') || 0;
+            window.scroll(0,pageVerticalPositionGet);
+            localStorage.setItem('pageVerticalPostion',0);
+
+        })
+
+
+           $(".CommentBtn").on("click",function()
+        {
+            let PostId = $(this).data("id");
+            $("#particalContainer").load("@Url.Action("GetPostPartial", "Home")" + "?PostId=" + PostId,function(){
+                 initParticalButtons();
+            });
+        });
+        function initParticalButtons() {
+                       $("#BackBtnPartial").on("click",function()
+                       {
+                            $("#particalContainer").empty();
+                       });
+        }
+        document.addEventListener("DOMContentLoaded",function()
+        {
+            const btn = document.querySelectorAll(".rigthBtn");
+        const btn2 = document.querySelectorAll(".leftBtn");
+
+        btn.forEach(item => {
+             item.addEventListener("click", () => {
+
+                const elem = document.getElementById(`MainDivPosAbs-${ item.dataset.id}`);
+
+                let length = elem.dataset.count * 450;
+
+                let number1 = elem.style.left.slice(0,-2) ?? 0;
+                let currnetnum = parseInt(number1 * -1);
+
+                if(currnetnum * -1 + (-450)  > elem.dataset.count * -450)
+                {
+                    let newnumber = (currnetnum * -1) + (-450);
+
+                    // console.log(newnumber);
+                    elem.style.left = `${newnumber}px`;
+
+                }
+
+
+            })
+        })
+
+        btn2.forEach(item => {
+             item.addEventListener("click", () => {
+
+                const elem = document.getElementById(`MainDivPosAbs-${ item.dataset.id}`);
+                  let number1 = elem.style.left.slice(0,-2) ?? 0;
+                let currnetnum = parseInt(number1 * -1);
+                if(currnetnum * (-1) + 450 <= 0)
+                {
+                    let newnumber = (currnetnum * -1) + 450;
+
+                    elem.style.left = `${newnumber}px`;
+                }
+
+
+            })
+        })
+        })
+        
+
+ 
+        const dcreate = document.getElementById("displaycreate");
+        const cbody = document.getElementById("bodycrate");
+        // const cbody = document.body;
+
+        const backbtn = document.getElementById("backbtn");
+        const PointMenu = document.querySelectorAll(".pointMenu1");
+        const PointBtn12 = document.querySelectorAll(".morebtn");
+        const poindInBtnBack = document.querySelectorAll(".poindInBtnBack");
+
+        ////////////////////////////////////////////////
+        const SelectBtn = document.getElementById("SelectBtn");
+        const SelectBtnAfter = document.getElementById("SelectBtnAfter");
+        const createBack = document.getElementById("createBack");
+        const form1 = document.getElementById("form1");
+        const form2 = document.getElementById("form2");
+        const ImageTyppe = document.getElementById("ImageTyppe");
+        const divafterstr = document.getElementById("divafterstr");
+        const TextBtrn23 = document.getElementById("TextBtrn23");
+        const entercls22 = document.getElementById("entercls22");
+
+
+        const createbtns = document.getElementById("createbtn");
+
+        createbtns.addEventListener("click", () => {
+
+                console.log("Create clicked!");
+                cbody.style.overflowY = "hidden";
+                dcreate.style.display = "flex";
+
+        })
+        
+        SelectBtn.addEventListener("click",(event) =>{
+            event.preventDefault();
+            SelectBtnAfter.click();
+        })
+        // SelectBtnAfter.addEventListener("", ()=>{
+        // })
+        function changeWidth()
+        {
+            createBack.className = "createdivaddafter";
+            form1.style.display = "flex";
+            form2.style.display = "flex";
+            SelectBtn.style.display = "none";
+            ImageTyppe.style.display = "flex";
+            divafterstr.className = "strechdivafter";
+            TextBtrn23.style.display = "none";
+            entercls22.style.display = "flex";
+
+        }
+        function defaultValue()
+        {
+            SelectBtnAfter.value = "";
+           
+
+        }
+     
+        backbtn.addEventListener("click",()=>{
+             cbody.style.overflowY = "auto";
+             dcreate.style.display = "none";
+            createBack.className = "createdivadd";
+             SelectBtn.style.display = "block";
+             form1.style.display = "none";
+            form2.style.display = "none";
+            divafterstr.className = "strechdiv332";
+            TextBtrn23.style.display = "block";
+            entercls22.style.display = "none";
+            ImageTyppe.style.display = "none";
+
+
+
+
+        })
+        //         for (let i of PointBtn12) {
+        //     i.addEventListener("click", () => {
+        //         cbody.style.overflowY = "hidden";
+        //         PointMenu.style.display = "flex";
+        //     });
+        // }
+        PointBtn12.forEach(i => {
+            i.addEventListener("click",() =>
+            {
+                let id = i.dataset.id;
+                let menu = document.querySelector(`#PointMenu-${id}`);
+                cbody.style.overflowY = "hidden";
+                menu.style.display = "flex";
+            })
+        });
+        poindInBtnBack.forEach(i => {
+            i.addEventListener("click",() =>
+            {
+
+        
+                cbody.style.overflowY = "auto";
+                PointMenu.forEach(i => i.style.display = "none");
+
+            })
+        });
+    
+    </script>
+}

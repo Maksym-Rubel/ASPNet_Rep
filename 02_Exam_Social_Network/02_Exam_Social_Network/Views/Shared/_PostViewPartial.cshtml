@@ -1,0 +1,112 @@
+﻿@using _02_Exam_Social_Network.Data.Entities
+@model Post
+
+<div class="BackGroundPartial">
+    <div id="BackBtnPartial"></div>
+
+    <div class="PartialRed">
+
+
+        <div class="MainImgdivPartial">
+            <button id="btnright" data-id="@Model.Id" class="rigthBtn">@Model.Id</button>
+            <button id="btnleft" data-id="@Model.Id" class="leftBtn">@Model.Id</button>
+
+            <div id="MainDivPosAbs-@Model.Id" data-count="@Model.ImgUrls.Count()" class="MainImgdiv2">
+                @foreach (var item in Model.ImgUrls)
+
+                {
+                    <img class="ImgUrlUp"
+                         src=@item.Url />
+                }
+            </div>
+
+
+        </div>
+        <div class="MainImgdivPartial22">
+             <div class="FirstRowBllock">
+                <div class="firstblockphoto">
+                    <div class="ImgDivPost1">
+                        @* <img class="imgphoto" src=@Model.User.ImgUrl /> *@
+
+                    </div>
+                    <div class="firstblockcolumn">
+                        <p class="fontMax1">@Model.User.UserName</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="SecondRowBllock">
+                @foreach(var item in Model.Coments)
+                {
+                    <div class="ComentBlock">
+                        <div class="ComentBlockFirts">
+                            <div class="ImgDivPost2">
+                                @* <img class="imgphoto" src=@item.User.ImgUrl /> *@
+
+                            </div>
+                        </div>
+                        <div class="TextBlockComent">
+                            <div class="TextBlockRow">
+                                <p class="NickNameP">@item.User.UserName</p>
+                                <div class="MessageDiv">
+                                    <p class="NickNameM">@item.Message</p>
+
+                                </div>
+                            </div>
+                            <div class="TextBlockRow">
+                                @* @let top = @DateTime.Now.Date.AddDays(7) - *@
+
+                                    @if ((DateTime.Now.Date - item.DateTime.Date).Days == 0)
+                                    {
+                                        <p class="NickNameM1">today</p>
+                                    }
+                                    else if ((DateTime.Now.Date - item.DateTime.Date).Days < 7)
+                                    {
+                                        <p class="NickNameM1">@((DateTime.Now.Date - item.DateTime.Date).Days) days </p>
+                                    }
+                                    else if ((DateTime.Now.Date - item.DateTime.Date).Days >= 7 && (DateTime.Now.Date - item.DateTime.Date).Days <= 31)
+                                    {
+                                        <p class="NickNameM1">@((DateTime.Now.Date - item.DateTime.Date).Days / 7) weeks </p>
+
+                                    }
+                                    else
+                                    {
+                                        <p class="NickNameM1">@((DateTime.Now.Date - item.DateTime.Date).Days) month </p>
+
+                                    }
+
+                               
+                                <p class="NickNameM1">Likes: 1</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                }
+            </div>
+            <div class="ThirdRowBllock"></div>
+            <div class="FourRowBllock">
+                <form method="post" class="FormFlex" enctype="multipart/form-data" asp-controller="Home" asp-action="SetComment">
+                            <input type="hidden" name="PostId" value="@Model.Id" />
+
+                            <textarea name="Message" class="TextAreaPartial" placeholder="Add a comment..."></textarea>
+                            
+                            <input  class="PublishPartial" type="submit" value="Publish" />
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+ @section Scripts {
+    <script>
+
+        
+       </script>
+} 

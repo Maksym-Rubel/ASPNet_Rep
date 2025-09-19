@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e326980c7cb81e7e4c8d3315ff38c8ac37e4306")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c715599de6fccfd79913aa2f1a1071ce4236b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyTitleAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

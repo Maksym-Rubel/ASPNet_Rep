@@ -1,0 +1,144 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using _02_Exam_Social_Network.Data.Entities
+@model User
+
+
+
+
+        <div class="MainProfileDiv">
+            <div class="FirstRowProfile">
+                <div class="ImageProfileBack">
+                     <div class="ImageBack"><img class="ImgMini" src="@Model.ImgUrl" /></div>
+                </div>
+                <div class="ProfileText">
+                    <div class="FirstMiniProf">
+                        <p id="NickNameId">@Model.UserName</p>
+                        <button class="firstRowBtn"> <p class="MagrinP">Edit profile</p></button>
+                        <button class="firstRowBtn"> <p class="MagrinP">View archive</p></button>
+
+                    </div>
+                    <div class="RowProfile">
+                        <p class="nextPub"><span class="numberPub">0</span>publications</p>
+                        <p class="nextPub"><span class="numberPub">23</span>subscribers</p>
+                        <p class="nextPub"><span class="numberPub">28</span>subscriptions</p>
+
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="SecondRowProfile">
+                <div class="fullBlock">
+                    <div class="StoriesItem">
+                        @* <img class="ImgPos" src=@item.ImgUrl /> *@
+                    </div>
+            <p class="textback">@Model.UserName</p>
+                </div>
+            </div>
+            <div class="MainDivBlock">
+                <button class="MainDivBlockBtnActive"></button>
+                <button class="MainDivBlockBtnNonActive"></button>
+                <button class="MainDivBlockBtnNonActive"></button>
+
+            </div>
+            <div class="PhotoDiv">
+
+                @foreach(var i in Model.Posts.OrderByDescending(m=> m.Id))
+                {
+       
+
+                        var Photo = @i.ImgUrls.FirstOrDefault(p => p.PostId == @i.Id);
+                        if(Photo != null)
+                        {
+
+                           @* <button onclick=""></button>  *@
+
+                            <div class="PhotoBlock">
+
+                                <img class="ImgEditds" src="@Photo.Url" alt="Text" />
+                                <div class="BlurDiv"></div>
+                                <button class="showPartical" data-id="@i.Id">@i.Id</button>
+
+                                <div class="InfoDivProfile">
+                                    <div class="backInfo"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>@Model.PostUserLikes.Where(m => m.PostId == i.Id).Count()</p></div>
+                                    <div class="backInfo1"><img class="ImgInfo" src="/icons/chat.png" /><p>@Model.Coments.Where(m=> m.PostId == i.Id).Count()</p></div>
+
+                                </div>
+
+                            </div>
+
+                        }
+                      
+                }
+            </div> 
+        </div>
+    }
+}
+<div id="particalContainer"></div>
+
+
+
+@section Scripts
+{
+    <script>
+        $(".showPartical").on("click",function()
+        {
+            let PostId = $(this).data("id");
+            $("#particalContainer").load("@Url.Action("GetPostPartial","Home")" + "?PostId=" + PostId,function(){
+                 initParticalButtons();
+            });
+        });
+
+
+                function initParticalButtons() {
+                            $("#BackBtnPartial").on("click",function()
+                            {
+                                 $("#particalContainer").empty();
+                            });
+
+        const btn = document.querySelectorAll(".rigthBtn");
+        const btn2 = document.querySelectorAll(".leftBtn");
+
+        btn.forEach(item => {
+             item.addEventListener("click", () => {
+
+                const elem = document.getElementById(`MainDivPosAbs-${ item.dataset.id}`);
+
+                let length = elem.dataset.count * 500;
+
+                let number1 = elem.style.left.slice(0,-2) ?? 0;
+                let currnetnum = parseInt(number1 * -1);
+
+                if(currnetnum * -1 + (-500)  > elem.dataset.count * -500)
+                {
+                    let newnumber = (currnetnum * -1) + (-500);
+
+                    // console.log(newnumber);
+                    elem.style.left = `${newnumber}px`;
+
+                }
+
+
+            })
+        })
+
+        btn2.forEach(item => {
+             item.addEventListener("click", () => {
+
+                const elem = document.getElementById(`MainDivPosAbs-${ item.dataset.id}`);
+                  let number1 = elem.style.left.slice(0,-2) ?? 0;
+                let currnetnum = parseInt(number1 * -1);
+                if(currnetnum * (-1) + 500 <= 0)
+                {
+                    let newnumber = (currnetnum * -1) + 500;
+
+                    elem.style.left = `${newnumber}px`;
+                }
+
+
+            })
+        
+            });
+        }
+    </script>
+}

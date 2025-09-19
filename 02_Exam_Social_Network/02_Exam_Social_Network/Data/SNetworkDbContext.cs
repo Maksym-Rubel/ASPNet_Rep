@@ -1,26 +1,29 @@
 ﻿using _02_Exam_Social_Network.Data.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace _02_Exam_Social_Network.Data
 {
-    public class SNetworkDbContext : DbContext
+    public class SNetworkDbContext : IdentityDbContext<User>
     {
-        public SNetworkDbContext()
-        {
-            //Database.EnsureCreated();
-        }
+        //public SNetworkDbContext()
+        //{
+        //    //Database.EnsureCreated();
+        //}
 
 
 
 
         public SNetworkDbContext(DbContextOptions<SNetworkDbContext> options) : base(options) { }
 
-        public DbSet<User> Users { get; set; }
+        //public DbSet<User> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<PostImage> PostImages { get; set; }
         public DbSet<Coment> Coments { get; set; }
 
 
+        public DbSet<PostUserLike> PostUserLikes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -38,8 +41,8 @@ namespace _02_Exam_Social_Network.Data
             modelBuilder.Entity<Post>()
             .HasOne(c => c.User)
             .WithMany(c => c.Posts)
-            .HasForeignKey(c => c.UserId);
-
+            .HasForeignKey(c => c.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Coment>()
             .HasOne(c => c.User)
@@ -54,62 +57,74 @@ namespace _02_Exam_Social_Network.Data
             .OnDelete(DeleteBehavior.Restrict);
 
 
-            modelBuilder.Entity<User>().HasData(new List<User>()
-            {
+            modelBuilder.Entity<Post>()
+            .HasMany(c => c.PostUserLikes)
+            .WithOne(c => c.Post)
+            .OnDelete(DeleteBehavior.Cascade);
 
-                new User() {
-                 Id = 1,
-                 NickName = "maxyyy42",
-                 Name = "Maksym",
-                 Email = "rubelmaksum2404@gmail.com",
-                 Password = "TestPass22",
-                 ImgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL-OXfUdlkKCgDFYV9WXavaJucZsprpGiTA&s",
 
-                },
-                new User() {
-                    Id = 2,
-                    NickName = "igor21",
-                    Name = "Igor",
-                    Email = "rubelmaksum1@gmail.com",
-                    Password = "TestPass22",
-                    ImgUrl = "https://randomuser.me/api/portraits/men/14.jpg"
-                },
-                new User() {
-                    Id = 3,
-                    NickName = "denys88",
-                    Name = "Denys",
-                    Email = "rubelmaksum2@gmail.com",
-                    Password = "TestPass22",
-                    ImgUrl = "https://randomuser.me/api/portraits/men/45.jpg"
-                },
-                new User() {
-                    Id = 4,
-                    NickName = "petya09",
-                    Name = "Petya",
-                    Email = "rubelmaksum3@gmail.com",
-                    Password = "TestPass22",
-                    ImgUrl = "https://randomuser.me/api/portraits/men/52.jpg"
-                },
-                new User() {
-                    Id = 5,
-                    NickName = "vika_sun",
-                    Name = "Vika",
-                    Email = "rubelmaksum4@gmail.com",
-                    Password = "TestPass22",
-                    ImgUrl = "https://randomuser.me/api/portraits/women/21.jpg"
-                },
-                new User() {
-                    Id = 6,
-                    NickName = "katya_star",
-                    Name = "Katya",
-                    Email = "rubelmaksum5@gmail.com",
-                    Password = "TestPass22",
-                    ImgUrl = "https://randomuser.me/api/portraits/women/35.jpg"
-                }
-    
-    
+            modelBuilder.Entity<User>()
+            .HasMany(c => c.PostUserLikes)
+            .WithOne(c => c.User)
+            .OnDelete(DeleteBehavior.Cascade);
 
-            });
+
+            //modelBuilder.Entity<User>().HasData(new List<User>()
+            //{
+
+            //    new User() {
+            //     Id = 1,
+            //     NickName = "maxyyy42",
+            //     Name = "Maksym",
+            //     Email = "rubelmaksum2404@gmail.com",
+            //     Password = "TestPass22",
+            //     ImgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL-OXfUdlkKCgDFYV9WXavaJucZsprpGiTA&s",
+
+            //    },
+            //    new User() {
+            //        Id = 2,
+            //        NickName = "igor21",
+            //        Name = "Igor",
+            //        Email = "rubelmaksum1@gmail.com",
+            //        Password = "TestPass22",
+            //        ImgUrl = "https://randomuser.me/api/portraits/men/14.jpg"
+            //    },
+            //    new User() {
+            //        Id = 3,
+            //        NickName = "denys88",
+            //        Name = "Denys",
+            //        Email = "rubelmaksum2@gmail.com",
+            //        Password = "TestPass22",
+            //        ImgUrl = "https://randomuser.me/api/portraits/men/45.jpg"
+            //    },
+            //    new User() {
+            //        Id = 4,
+            //        NickName = "petya09",
+            //        Name = "Petya",
+            //        Email = "rubelmaksum3@gmail.com",
+            //        Password = "TestPass22",
+            //        ImgUrl = "https://randomuser.me/api/portraits/men/52.jpg"
+            //    },
+            //    new User() {
+            //        Id = 5,
+            //        NickName = "vika_sun",
+            //        Name = "Vika",
+            //        Email = "rubelmaksum4@gmail.com",
+            //        Password = "TestPass22",
+            //        ImgUrl = "https://randomuser.me/api/portraits/women/21.jpg"
+            //    },
+            //    new User() {
+            //        Id = 6,
+            //        NickName = "katya_star",
+            //        Name = "Katya",
+            //        Email = "rubelmaksum5@gmail.com",
+            //        Password = "TestPass22",
+            //        ImgUrl = "https://randomuser.me/api/portraits/women/35.jpg"
+            //    }
+
+
+
+            //});
             //modelBuilder.Entity<Post>().HasData(new List<Post>()
             //{
 

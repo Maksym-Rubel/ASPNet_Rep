@@ -1,4 +1,6 @@
-﻿namespace _02_Exam_Social_Network.Data.Entities
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace _02_Exam_Social_Network.Data.Entities
 {
     public class Post
     {
@@ -7,10 +9,13 @@
         public ICollection<PostImage> ImgUrls { get; set; }
 
         public string? Location { get; set; } = null;
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
+        public DateTime DateTime { get; set; } = DateTime.Now;
 
         public ICollection<Coment> Coments { get; set; }
-        //public ICollection<User> LikeUsers { get; set; }
+        //public ICollection<User> LikesUser { get; set; } = new List<User>();
+        public ICollection<PostUserLike> PostUserLikes { get; set; } = new List<PostUserLike>();
+
     }
 }

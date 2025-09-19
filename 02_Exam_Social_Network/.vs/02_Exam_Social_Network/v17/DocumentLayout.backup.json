@@ -3,68 +3,164 @@
   "WorkspaceRootPath": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\home\\homebtn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\home\\homebtn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\snetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\snetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\controllers\\autorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\controllers\\autorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\autorize\\homebtn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\autorize\\homebtn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\autorize\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\autorize\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\coment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\coment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\snetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\snetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\postuserlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\postuserlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\coment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\coment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\data\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\data\\entities\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\_postviewpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\_postviewpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831201121_AddComents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,26 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250831104143_addpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250831104143_addpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\snetworkdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\snetworkdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250829173814_seedusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250829173814_seedusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250827155744_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250827155744_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250830120221_updateddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250830120221_updateddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831104059_AddPost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,14 +223,6 @@
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\icons\\1b77806dfbc58c918574c49694d9cd9d.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\wwwroot\\icons\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\icons\\home.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
@@ -163,16 +231,16 @@
       "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\wwwroot\\icons\\homelight.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250831210355_addnewdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250831210355_addnewdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250918195216_add-migratin sdak23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250918195216_add-migratin sdak23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250831201558_addcoments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250831201558_addcoments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250918191050_sda23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250918191050_sda23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250904170837_updatenew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250904170837_updatenew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|d:\\myworkitstep\\02_exam_social_network\\02_exam_social_network\\migrations\\20250918190735_addpost23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}|02_Exam_Social_Network\\02_Exam_Social_Network.csproj|solutionrelative:02_exam_social_network\\migrations\\20250918190735_addpost23.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,117 +258,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Profile.cshtml",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Home\\Profile.cshtml",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Profile.cshtml",
-              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Home\\Profile.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwDQAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-08T15:57:14.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Coment.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T19:33:35.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "02_Exam_Social_Network\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-29T15:50:42.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Post.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Post.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\Post.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Post.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\Post.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T21:31:08.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwFQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T17:08:55.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "02_Exam_Social_Network\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAACVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-29T15:14:54.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\css\\site.css*",
-              "RelativeToolTip": "02_Exam_Social_Network\\wwwroot\\css\\site.css*",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAAAHoBAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-29T15:17:48.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SNetworkDbContext.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAuwJgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\User.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\User.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T15:26:25.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T15:33:54.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeBtn.cshtml",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\HomeBtn.cshtml",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Home\\HomeBtn.cshtml",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\HomeBtn.cshtml",
-              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Home\\HomeBtn.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Autorize\\Profile.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Autorize\\Profile.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Autorize\\Profile.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Autorize\\Profile.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T15:50:19.044Z",
+              "WhenOpened": "2025-09-08T15:57:14.956Z",
               "EditorCaption": ""
             },
             {
@@ -313,11 +304,221 @@
               "RelativeToolTip": "02_Exam_Social_Network\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-29T17:08:32.256Z"
+              "WhenOpened": "2025-08-29T17:08:32.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-29T17:07:16.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T17:08:55.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AutorizeController.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\AutorizeController.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Controllers\\AutorizeController.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Controllers\\AutorizeController.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Controllers\\AutorizeController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwE4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:19:30.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeBtn.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Autorize\\HomeBtn.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Autorize\\HomeBtn.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Autorize\\HomeBtn.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Autorize\\HomeBtn.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T15:50:19.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "02_Exam_Social_Network\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAswBEBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-29T15:17:48.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PostUserLike.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\PostUserLike.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\PostUserLike.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\PostUserLike.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\PostUserLike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:19:25.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SNetworkDbContext.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Data\\SNetworkDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAEEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:26:25.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20250918195216_Add-Migratin sdak23.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918195216_Add-Migratin sdak23.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250918195216_Add-Migratin sdak23.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918195216_Add-Migratin sdak23.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250918195216_Add-Migratin sdak23.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:52:16.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20250918191050_sda23.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918191050_sda23.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250918191050_sda23.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918191050_sda23.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250918191050_sda23.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:10:50.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20250918190735_AddPost23.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190735_AddPost23.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250918190735_AddPost23.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190735_AddPost23.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250918190735_AddPost23.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:07:35.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250918190618_AWdda23.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250918190618_AWdda23.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:06:18.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250918190022_AddListr23.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250918190022_AddListr23.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:00:22.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T18:56:14.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T16:53:08.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Coment.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\Coment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T19:33:35.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250917173921_AddPDsad.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250917173921_AddPDsad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:39:21.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\Post.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\Post.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\Post.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T21:31:08.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PostImage.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\PostImage.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\PostImage.cs",
@@ -329,43 +530,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Data\\Entities\\User.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Data\\Entities\\User.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Data\\Entities\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T15:33:54.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-29T17:07:16.478Z"
+              "WhenOpened": "2025-09-17T16:53:18.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "20250904170837_UpdateNew.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250904170837_UpdateNew.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250904170837_UpdateNew.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250904170837_UpdateNew.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250904170837_UpdateNew.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T17:08:37.206Z"
+              "DocumentIndex": 20,
+              "Title": "_PostViewPartial.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_PostViewPartial.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\_PostViewPartial.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_PostViewPartial.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Shared\\_PostViewPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-11T17:07:31.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -377,7 +566,205 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-29T17:07:07.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Program.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Program.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Program.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T17:44:13.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:07:56.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:07:21.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:07:51.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T16:53:09.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T16:53:11.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\appsettings.json",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\appsettings.json",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\appsettings.json",
+              "RelativeToolTip": "02_Exam_Social_Network\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAD7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-17T17:03:44.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "02_Exam_Social_Network\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-17T16:52:41.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250915171759_FirstMigr.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915171759_FirstMigr.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:17:59.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250915171405_AddLikes.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915171405_AddLikes.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:14:05.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250915170726_Postlike.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915170726_Postlike.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:07:26.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250915170406_AddPostLike.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915170406_AddPostLike.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:04:07.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250915170221_LikeAddPost.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915170221_LikeAddPost.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:02:21.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20250915155523_DataTimeAdd.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs",
+              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250915155523_DataTimeAdd.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T15:55:24.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-29T17:07:33.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "02_Exam_Social_Network\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-29T15:50:42.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\favicon.ico",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\favicon.ico",
@@ -390,270 +777,160 @@
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "20250831210355_AddNewData.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831210355_AddNewData.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831210355_AddNewData.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831210355_AddNewData.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831210355_AddNewData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T21:03:56.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "02_Exam_Social_Network\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-29T17:07:33.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "20250831201558_AddComents.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831201558_AddComents.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831201558_AddComents.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831201558_AddComents.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831201558_AddComents.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T20:15:58.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "20250831201121_AddComents.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831201121_AddComents.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831201121_AddComents.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831201121_AddComents.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831201121_AddComents.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T20:11:21.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 41,
               "Title": "20250831200652_AddComents.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831200652_AddComents.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831200652_AddComents.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831200652_AddComents.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831200652_AddComents.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T20:06:53.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 42,
               "Title": "20250831200041_AddComent.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831200041_AddComent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T20:00:41.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20250831104143_AddPost.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831104143_AddPost.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831104143_AddPost.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831104143_AddPost.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831104143_AddPost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T10:41:43.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SNetworkDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\SNetworkDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\SNetworkDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\SNetworkDbContextModelSnapshot.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\SNetworkDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T10:41:30.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20250829173814_SeedUsersData.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250829173814_SeedUsersData.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250829173814_SeedUsersData.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250829173814_SeedUsersData.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250829173814_SeedUsersData.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T17:38:15.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20250827155744_InitialCreate.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250827155744_InitialCreate.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250827155744_InitialCreate.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250827155744_InitialCreate.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250827155744_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T15:57:44.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "20250830120221_UpdatedData.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250830120221_UpdatedData.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250830120221_UpdatedData.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250830120221_UpdatedData.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250830120221_UpdatedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T12:02:22.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 43,
               "Title": "20250831104059_AddPost.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831104059_AddPost.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831104059_AddPost.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831104059_AddPost.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831104059_AddPost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:40:59.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 44,
               "Title": "20250831103654_Post100.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103654_Post100.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831103654_Post100.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103654_Post100.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831103654_Post100.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:36:54.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 45,
               "Title": "20250831103555_Post5.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103555_Post5.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831103555_Post5.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103555_Post5.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831103555_Post5.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:35:55.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 46,
               "Title": "20250831103304_Post4.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103304_Post4.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831103304_Post4.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103304_Post4.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831103304_Post4.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:33:04.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 47,
               "Title": "20250831103156_Post3.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103156_Post3.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831103156_Post3.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831103156_Post3.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831103156_Post3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:31:56.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 48,
               "Title": "20250831102850_Post1.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102850_Post1.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831102850_Post1.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102850_Post1.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831102850_Post1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:28:50.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 49,
               "Title": "20250831102251_AddPost10.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102251_AddPost10.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831102251_AddPost10.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102251_AddPost10.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831102251_AddPost10.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:22:52.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 50,
               "Title": "20250831102100_Post8.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102100_Post8.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831102100_Post8.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831102100_Post8.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831102100_Post8.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:21:00.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 51,
               "Title": "20250831101930_AddPost7.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101930_AddPost7.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831101930_AddPost7.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101930_AddPost7.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831101930_AddPost7.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:19:30.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 52,
               "Title": "20250831101835_AddPost6.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101835_AddPost6.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831101835_AddPost6.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101835_AddPost6.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831101835_AddPost6.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:18:35.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 53,
               "Title": "20250831101616_AddPost5.cs",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101616_AddPost5.cs",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\Migrations\\20250831101616_AddPost5.cs",
               "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Migrations\\20250831101616_AddPost5.cs",
               "RelativeToolTip": "02_Exam_Social_Network\\Migrations\\20250831101616_AddPost5.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T10:16:17.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 54,
               "Title": "1b77806dfbc58c918574c49694d9cd9d.jpg - Bitmap [170x170, 24 bit, JPG]",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\icons\\1b77806dfbc58c918574c49694d9cd9d.jpg",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\icons\\1b77806dfbc58c918574c49694d9cd9d.jpg",
@@ -665,31 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Program.cs",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Program.cs",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Program.cs",
-              "RelativeToolTip": "02_Exam_Social_Network\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAD1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T17:44:13.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "02_Exam_Social_Network\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-29T17:07:07.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "home.png - PNG [512x512, 32 bit, PNG]",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\icons\\home.png",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\icons\\home.png",
@@ -701,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 56,
               "Title": "homelight.png - PNG [512x512, 32 bit, PNG]",
               "DocumentMoniker": "D:\\MYWORKITSTEP\\02_Exam_Social_Network\\02_Exam_Social_Network\\wwwroot\\icons\\homelight.png",
               "RelativeDocumentMoniker": "02_Exam_Social_Network\\wwwroot\\icons\\homelight.png",

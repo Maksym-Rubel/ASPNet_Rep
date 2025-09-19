@@ -1,7 +1,10 @@
 using _02_Exam_Social_Network.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using _02_Exam_Social_Network.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("SNetworkDbContextConnection") ?? throw new InvalidOperationException("Connection string 'SNetworkDbContextConnection' not found.");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -9,6 +12,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<SNetworkDbContext>(options =>
     options.UseSqlServer("\"Data Source=DESKTOP-JELVTGO\\\\SQLEXPRESS;Initial Catalog=SocialNetworkDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;Application Intent=ReadWrite;MultiSubnetFailover=False\""));
+
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<SNetworkDbContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,4 +35,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapRazorPages();
 app.Run();
