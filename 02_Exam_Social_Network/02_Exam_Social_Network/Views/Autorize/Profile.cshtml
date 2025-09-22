@@ -57,7 +57,7 @@
 
                                 <img class="ImgEditds" src="@Photo.Url" alt="Text" />
                                 <div class="BlurDiv"></div>
-                                <button class="showPartical" data-id="@i.Id">@i.Id</button>
+                                <button class="showPartical" data-id="@i.Id"></button>
 
                                 <div class="InfoDivProfile">
                                     <div class="backInfo"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>@Model.PostUserLikes.Where(m => m.PostId == i.Id).Count()</p></div>
@@ -84,7 +84,7 @@
         $(".showPartical").on("click",function()
         {
             let PostId = $(this).data("id");
-            $("#particalContainer").load("@Url.Action("GetPostPartial","Home")" + "?PostId=" + PostId,function(){
+            $("#particalContainer").load("@Url.Action("GetPostPartial", "Autorize")" + "?PostId=" + PostId,function(){
                  initParticalButtons();
             });
         });

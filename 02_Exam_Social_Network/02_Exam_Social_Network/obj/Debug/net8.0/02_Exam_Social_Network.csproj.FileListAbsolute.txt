@@ -319,3 +319,5 @@ D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\obj\Debug\net8.0\r
 D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\obj\Debug\net8.0\02_Exam_Social_Network.pdb
 D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\obj\Debug\net8.0\02_Exam_Social_Network.genruntimeconfig.cache
 D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\obj\Debug\net8.0\ref\02_Exam_Social_Network.dll
+D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\bin\Debug\net8.0\DataAccess.dll
+D:\MYWORKITSTEP\02_Exam_Social_Network\02_Exam_Social_Network\bin\Debug\net8.0\DataAccess.pdb

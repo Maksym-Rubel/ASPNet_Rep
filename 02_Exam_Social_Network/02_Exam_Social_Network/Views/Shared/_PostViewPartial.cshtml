@@ -26,7 +26,7 @@
              <div class="FirstRowBllock">
                 <div class="firstblockphoto">
                     <div class="ImgDivPost1">
-                        @* <img class="imgphoto" src=@Model.User.ImgUrl /> *@
+                        <img class="imgphoto" src=@Model.User.ImgUrl /> 
 
                     </div>
                     <div class="firstblockcolumn">
@@ -41,7 +41,7 @@
                     <div class="ComentBlock">
                         <div class="ComentBlockFirts">
                             <div class="ImgDivPost2">
-                                @* <img class="imgphoto" src=@item.User.ImgUrl /> *@
+                               <img class="imgphoto" src=@item.User.ImgUrl /> 
 
                             </div>
                         </div>
@@ -85,7 +85,7 @@
             </div>
             <div class="ThirdRowBllock"></div>
             <div class="FourRowBllock">
-                <form method="post" class="FormFlex" enctype="multipart/form-data" asp-controller="Home" asp-action="SetComment">
+                <form method="post" class="FormFlex" enctype="multipart/form-data" asp-controller="Autorize" asp-action="SetComment">
                             <input type="hidden" name="PostId" value="@Model.Id" />
 
                             <textarea name="Message" class="TextAreaPartial" placeholder="Add a comment..."></textarea>

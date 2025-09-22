@@ -76,24 +76,27 @@ namespace _02_Exam_Social_Network.Controllers
         }
         public IActionResult HomeBtn()
         {
-            this.ViewBag.ProfileId = CurrentUserId;
+           
+            HttpContext.Session.SetString("ProfileId", CurrentUserId);
             Console.WriteLine(CurrentUserId);
             var model = ctx.Users
                 .Include(u => u.Posts)
-                    .ThenInclude(p => p.ImgUrls)
+                    .ThenInclude(m=>m.PostUserLikes)
+                .Include(u => u.Posts)
+                    .ThenInclude(m => m.ImgUrls)
                 .Include(u => u.Coments)
-                .Include(u => u.PostUserLikes)
-                    .ThenInclude(n => n.Post)
-                    .ThenInclude(n => n.User)
-
                 .ToList();
             return View(model);
         }
         public IActionResult Profile()
         {
+            HttpContext.Session.SetString("ProfileId", CurrentUserId);
+
             var model = ctx.Users
                 .Include(u => u.Posts)
                     .ThenInclude(p => p.ImgUrls)
+                .Include(u => u.Posts)
+                    .ThenInclude(m => m.PostUserLikes)
                 .Include(u => u.Coments)
                 .FirstOrDefault(m => m.Id == CurrentUserId);
           
@@ -102,6 +105,8 @@ namespace _02_Exam_Social_Network.Controllers
 
         public IActionResult AddLike(int postId)
         {
+            HttpContext.Session.SetString("ProfileId", CurrentUserId);
+
             ctx.PostUserLikes.Add(new PostUserLike
             {
                 UserId = CurrentUserId,
@@ -119,10 +124,13 @@ namespace _02_Exam_Social_Network.Controllers
 
                 .ToList();
 
-            return View("HomeBtn", model);
+            return RedirectToAction("HomeBtn", "Autorize");
+
         }
         public IActionResult DeleteLike(int postId)
         {
+            HttpContext.Session.SetString("ProfileId", CurrentUserId);
+
             var like = ctx.PostUserLikes.FirstOrDefault(u => u.UserId == CurrentUserId && u.PostId == postId);
             ctx.PostUserLikes.Remove(like);
 
@@ -138,7 +146,7 @@ namespace _02_Exam_Social_Network.Controllers
 
                 .ToList();
 
-            return View("HomeBtn", model);
+            return RedirectToAction("HomeBtn", "Autorize");
         }
         public IActionResult Delete(int id)
         {
@@ -182,7 +190,7 @@ namespace _02_Exam_Social_Network.Controllers
         [HttpPost]
         public IActionResult SetComment(string Message, int PostId)
         {
-            ctx.Coments.Add(new Coment { Message = Message, PostId = PostId, UserId = "2" });
+            ctx.Coments.Add(new Coment { Message = Message, PostId = PostId, UserId = CurrentUserId });
             ctx.SaveChanges();
             var model =
                 ctx.Posts

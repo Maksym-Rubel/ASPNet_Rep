@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Exam_Social_Network", "02_Exam_Social_Network\02_Exam_Social_Network.csproj", "{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{E09433D2-B154-4A4D-A70D-AFD990D53B78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A1A1A1-FCF6-4AC7-96EC-E3326EA99FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09433D2-B154-4A4D-A70D-AFD990D53B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09433D2-B154-4A4D-A70D-AFD990D53B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09433D2-B154-4A4D-A70D-AFD990D53B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09433D2-B154-4A4D-A70D-AFD990D53B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,67 +1,156 @@
 ﻿@page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Create an account";
 }
 
-<h1>@ViewData["Title"]</h1>
+<svg width="0" height="0">
+    <mask id="mask_id" width="600" height="600">
+        <rect x="0" y="0" width="600" height="600" fill="white" rx="23" ry="23"></rect>
+        <rect x="1" y="1" width="598" height="598" fill="black" rx="23" ry="23"></rect>
 
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
+    </mask>
+</svg>
+
+<div class="FullScreanDiv">
+    <div class="BackImage">
+        <div id="BackImg" class="BluredSvg1">
+            <div id="DivShine"></div>
+
+    <div data-id="1" class="divinner"></div>
+    <div data-id="2" class="divinner"></div>
+    <div data-id="3" class="divinner"></div>
+    <div data-id="4" class="divinner"></div>
+    <div data-id="5" class="divinner"></div>
+    <div data-id="6" class="divinner"></div>
+    <div data-id="7" class="divinner"></div>
+    <div data-id="8" class="divinner"></div>
+    <div data-id="9" class="divinner"></div>
+    <div class="CenterColl">
+                <h1>@ViewData["Title"]</h1>
+
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+             
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="TextField">
+                        <label class="CustomLabel" asp-for="Input.UserName">NickName</label>
+                        <input asp-for="Input.UserName" class="InputField" autocomplete="username" aria-required="true" placeholder="nickname" />
+                        <span asp-validation-for="Input.UserName" class="ValidationMessage"></span>
                     </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
+                <div class="TextField">
+                        <label class="CustomLabel" asp-for="Input.Email">Email</label>
+                        <input asp-for="Input.Email" class="InputField" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <span asp-validation-for="Input.Email" class="ValidationMessage"></span>
+                </div>
+                    <div class="TextField">
+                        <label class="CustomLabel" asp-for="Input.Password">Password</label>
+                        <input asp-for="Input.Password" class="InputField" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <span asp-validation-for="Input.Password" class="ValidationMessage"></span>
+                </div>
+                <div class="TextField">
+                        <label class="CustomLabel" asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword" class="InputField" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="ValidationMessage"></span>
+                </div>
+                <div class="TextField">
+                    <button id="registerSubmit" type="submit" class="LogInBtn">Register</button>    
+                </div>
+                    <div class="dontacc">
+
+                        <p>
+                            Already have an account?
+                        </p>
+                        <p>
+                            <a class="createa" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Log in</a>
+                        </p>
+                 </div>
+            </form>
+        </div>
+        </div>
+   
+    </div>
+    <div class="ImageDiv">
     </div>
 </div>
 
+        @* <div class="col-md-6 col-md-offset-2">
+            <section>
+               
+              
+                @{
+                    if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                    {
+                        
+                    }
+                    else
+                    {
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                            <div>
+                                <p>
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    }
+                                </p>
+                            </div>
+                        </form>
+                    }
+                }
+            </section>
+        </div> *@
+    </div>
+
+</div>
+
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        const btnHover = document.querySelectorAll(".divinner")
+        const BackImg = document.getElementById("BackImg")
+        const hoverShine = document.getElementById("DivShine")
+
+        btnHover.forEach(item=>
+        {
+            item.addEventListener("mouseenter",function()
+            {
+                const id = this.dataset.id;
+                if(id == "1")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(-8deg)";
+                    hoverShine.style.backgroundPosition = `0px 0px`
+                }
+
+                else if(id == "3")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(8deg)";
+                    hoverShine.style.backgroundPosition = `150px 0px`
+
+                }
+
+                 else if(id == "7")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(8deg)";
+                    hoverShine.style.backgroundPosition = `150px 0px`
+                }
+
+                  else if(id == "9")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(-8deg)";
+                    hoverShine.style.backgroundPosition = `0px 0px`
+
+                }
+            });
+
+            item.addEventListener("mouseleave",function()
+            {
+
+
+                    BackImg.style.transform = "rotateX(0deg) rotateY(0deg)";
+                                        hoverShine.style.backgroundPosition = `100px 0px`
+
+
+            });
+        });
+    </script>
 }

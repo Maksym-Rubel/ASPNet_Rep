@@ -1,0 +1,13 @@
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\MYWORKITSTEP\02_Exam_Social_Network\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

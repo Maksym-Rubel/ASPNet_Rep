@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c715599de6fccfd79913aa2f1a1071ce4236b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+200d8cfdffa39f4a95d38d5999e9f8d0bbc52a11")]
 [assembly: System.Reflection.AssemblyProductAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyTitleAttribute("02_Exam_Social_Network")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

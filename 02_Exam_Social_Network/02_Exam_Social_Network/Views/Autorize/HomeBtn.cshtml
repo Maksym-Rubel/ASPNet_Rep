@@ -3,7 +3,7 @@
 @* @using _02_Exam_Social_Network.js *@
 @model List<User>
 @{
-    ViewData["Id"] = "0";
+    var profileId = Context.Session.GetString("ProfileId");
 }
 
 
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="firstblockcolumn">
                                     <p class="fontMax">@item.UserName</p>
-                                    <p class="fontMax2">Rivne</p>
+                                    @* <p class="fontMax2">Rivne</p> *@
                                 </div>
                                 <div class="btndiv">
                                     <button id="PointBtn" data-id="@i.Id" class="morebtn"></button>
@@ -63,9 +63,10 @@
                             </div>
                             <div class="MainImgdiv1">
 
-                                
-                                @if (item.PostUserLikes.Any(m => m.PostId == @i.Id && m.UserId == ViewBag.ProfileId))
+
+                                @if (i.PostUserLikes.Any(m => m.PostId == i.Id && m.UserId == profileId?.ToString()))
                                 {
+                                   
                                     <a asp-action="DeleteLike" asp-controller="Autorize" asp-route-postId="@i.Id" id="LikeBtn-@i.Id" class="LikeBtnRed"></a>
                                 }
                                 else
@@ -75,7 +76,7 @@
                                 
 
                      
-                                <button class="CommentBtn" data-id="@i.Id">@i.Id</button>
+                                <button class="CommentBtn" data-id="@i.Id"></button>
                                 <button class="PlaneBtn"></button>
 
 
@@ -98,7 +99,8 @@
                                         if (@items.UserId == @i.UserId)
                                         {
                                             <p class="ComentsCount1"><span class="UserNameSpan">@items.User.UserName</span> @items.Message</p>
-                                            <p>@ViewBag.ProfileId</p>
+                                          
+                                         
                                         }
 
                                     }
@@ -221,7 +223,7 @@
            $(".CommentBtn").on("click",function()
         {
             let PostId = $(this).data("id");
-            $("#particalContainer").load("@Url.Action("GetPostPartial", "Home")" + "?PostId=" + PostId,function(){
+            $("#particalContainer").load("@Url.Action("GetPostPartial", "Autorize")" + "?PostId=" + PostId,function(){
                  initParticalButtons();
             });
         });

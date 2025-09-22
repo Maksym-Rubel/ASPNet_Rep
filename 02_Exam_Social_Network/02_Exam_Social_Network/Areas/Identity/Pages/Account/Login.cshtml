@@ -4,80 +4,224 @@
 @{
     ViewData["Title"] = "Log in";
 }
+<svg width="0" height="0">
+    <mask id="mask_id" width="600" height="500">
+        <rect x="0" y="0" width="600" height="500" fill="white" rx="23" ry="23"></rect>
+        <rect x="1" y="1" width="598" height="498" fill="black" rx="23" ry="23"></rect>
 
-<h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email" class="form-label">Email</label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label asp-for="Input.Password" class="form-label">Password</label>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
-                </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
-                </div>
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to log in.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
+    </mask>
+</svg>
+
+<div class="FullScreanDiv">
+
+    <div  class="BackImage"> 
+        <div id="BackImg" class="BluredSvg">
+            <div id="DivShine"></div>
+
+            <div data-id="1" class="divinner"></div>
+            <div data-id="2" class="divinner"></div>
+            <div data-id="3" class="divinner"></div>
+            <div data-id="4" class="divinner"></div>
+            <div data-id="5" class="divinner"></div>
+            <div data-id="6" class="divinner"></div>
+            <div data-id="7" class="divinner"></div>
+            <div data-id="8" class="divinner"></div>
+            <div data-id="9" class="divinner"></div>
+            <div class="CenterColl">
+                <section>
+                    <form id="account" method="post">
+                        <h1>@ViewData["Title"]</h1>
+
+                        <div asp-validation-summary="ModelOnly" role="alert"></div>
+                        @* <div class="TextField">
+                            <label for="Input_UserName" class="CustomLabel">NickName</label>
+                            <input asp-for="Input.UserName" class="InputField" autocomplete="off" placeholder="anonim" />
+                            <span asp-validation-for="Input.UserName" class="ValidationMessage"></span>
+                        </div> *@
+                        <div class="TextField">
+                            <label for="Input_Email" class="CustomLabel">Email</label>
+                            @* autocomplete="username" *@
+                            <input asp-for="Input.Email" class="InputField" autocomplete="off" placeholder="name@example.com" />
+                            <span asp-validation-for="Input.Email" class="ValidationMessage"></span>
+                        </div>
+
+                        <div class="TextField">
+                            <label for="Input_Password" class="CustomLabel">Password</label>
+                            @* autocomplete="current-password" *@
+                            <input asp-for="Input.Password" class="InputField" aria-required="true" placeholder="password" />
+                            <span asp-validation-for="Input.Password" class="ValidationMessage"></span>
+                        </div>
+
+                        <div class="CheckBoxAndPass">
+                            <div class="CheckboxField">
+                                <input asp-for="Input.RememberMe" class="CustomCheckbox" />
+                                <label for="Input_RememberMe" class="CustomLabel">@Html.DisplayNameFor(m => m.Input.RememberMe)</label>
+
+                            </div>
                             <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
+                                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
                             </p>
                         </div>
+                        
+                        <div class="TextField">
+                            <button id="login-submit" type="submit" class="LogInBtn">Log in</button>
+                        </div>
+                        <div class="dontacc">
+                            
+                            <p>
+                                Don`t have an account?
+                            </p>
+                            <p>
+                                <a class="createa" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Create a account</a>
+                            </p>
+                            @* <p> *@
+                                @* <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a> *@
+                            @* </p> *@
+                        </div>
                     </form>
-                }
-            }
-        </section>
+                </section>
+            </div>
+        </div>
+        @* <div class="GradientDiv">
+           <div id="BallMouse" class="BluredTop"></div>
+
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>  
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+            <div id="BallMouse" class="BallMouse"></div>
+        </div> *@
+ 
+     </div> 
+    @* <div class="BackText"> *@
+        @* <div class="CenterRow"> *@
+            @* <h1>@ViewData["Title"]</h1> *@
+            
+            @* <div class="col-md-6 col-md-offset-2">
+                <section>
+             
+                   
+                    @{
+                        if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                        {
+                        
+                        }
+                        else
+                        {
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div>
+                                    <p>
+                                        @foreach (var provider in Model.ExternalLogins!)
+                                        {
+                                            <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                        }
+                                    </p>
+                                </div>
+                            </form>
+                        }
+                    }
+                </section>
+            </div> *@
+        @* </div> *@
+    @* </div> *@
+   
+    <div class="ImageDiv">
     </div>
+
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        const btnHover = document.querySelectorAll(".divinner")
+        const BackImg = document.getElementById("BackImg")
+        const hoverShine = document.getElementById("DivShine")
+      
+        btnHover.forEach(item=>
+        {
+            item.addEventListener("mouseenter",function()
+            {
+                const id = this.dataset.id;
+                if(id == "1")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(-8deg)";
+                    hoverShine.style.backgroundPosition = `0px 0px`
+                }
+            
+                else if(id == "3")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(8deg)";
+                    hoverShine.style.backgroundPosition = `150px 0px`
+
+                }
+           
+                 else if(id == "7")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(8deg)";
+                    hoverShine.style.backgroundPosition = `150px 0px`
+                }
+              
+                  else if(id == "9")
+                {
+                    BackImg.style.transform = "rotateX(8deg) rotateY(-8deg)";
+                    hoverShine.style.backgroundPosition = `0px 0px`
+
+                }
+            });
+
+            item.addEventListener("mouseleave",function()
+            {
+               
+             
+                    BackImg.style.transform = "rotateX(0deg) rotateY(0deg)";
+                                        hoverShine.style.backgroundPosition = `100px 0px`
+
+                
+            });
+        });
+    </script>
 }
