@@ -1,5 +1,5 @@
-using _02_Exam_Social_Network.Data;
-using _02_Exam_Social_Network.Data.Entities;
+using DataAccess.Data;
+using DataAccess.Data.Entities;
 using _02_Exam_Social_Network.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

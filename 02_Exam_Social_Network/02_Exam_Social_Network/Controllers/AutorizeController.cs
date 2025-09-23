@@ -1,5 +1,5 @@
-﻿using _02_Exam_Social_Network.Data;
-using _02_Exam_Social_Network.Data.Entities;
+﻿using DataAccess.Data;
+using DataAccess.Data.Entities;
 using _02_Exam_Social_Network.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Security.AccessControl;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Net.Http.Headers;
 
 namespace _02_Exam_Social_Network.Controllers
 {
@@ -88,19 +89,41 @@ namespace _02_Exam_Social_Network.Controllers
                 .ToList();
             return View(model);
         }
-        public IActionResult Profile()
+        public IActionResult Profile(string? UserId)
         {
             HttpContext.Session.SetString("ProfileId", CurrentUserId);
 
-            var model = ctx.Users
+            if (UserId == null) {
+                var model = ctx.Users
+                    .Include(u => u.Followers)
+                    .Include(u => u.Following)
                 .Include(u => u.Posts)
                     .ThenInclude(p => p.ImgUrls)
                 .Include(u => u.Posts)
                     .ThenInclude(m => m.PostUserLikes)
-                .Include(u => u.Coments)
+                .Include(u => u.Posts)
+                    .ThenInclude(m => m.Coments)
                 .FirstOrDefault(m => m.Id == CurrentUserId);
-          
-            return View(model);
+
+                return View(model);
+            }
+            else
+            {
+                var model = ctx.Users
+                    .Include(u => u.Followers)
+                    .Include(u => u.Following)
+                .Include(u => u.Posts)
+                    .ThenInclude(p => p.ImgUrls)
+                .Include(u => u.Posts)
+                    .ThenInclude(m => m.PostUserLikes)
+                .Include(u => u.Posts)
+                    .ThenInclude(m => m.Coments)
+                .FirstOrDefault(m => m.Id == UserId);
+
+                return View(model);
+            }
+
+            
         }
 
         public IActionResult AddLike(int postId)
@@ -210,6 +233,42 @@ namespace _02_Exam_Social_Network.Controllers
 
 
 
+        }
+        [HttpGet]
+        public IActionResult ProfileEdit()
+        {
+            var model = ctx.Users.FirstOrDefault(m=> m.Id == CurrentUserId);
+
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult ProfileEdit(User user)
+        {
+            var MyUser = ctx.Users.FirstOrDefault(l => l.Id == CurrentUserId);
+
+            if (MyUser != null)
+            {
+                MyUser.UserName = user.UserName;
+                MyUser.ImgUrl = user.ImgUrl;
+                MyUser.Email = user.Email;
+                ctx.SaveChanges();
+
+            }
+
+            return RedirectToAction("Profile");
+        }
+
+        public IActionResult FollowToUser(string UserId)
+        {
+
+            
+            ctx.UserFollows.Add(new UserFollow
+            {
+                FollowerId = CurrentUserId,
+                FollowedId = UserId
+            });
+            ctx.SaveChanges();
+            return RedirectToAction("Profile", new { UserId = UserId });
         }
 
     }

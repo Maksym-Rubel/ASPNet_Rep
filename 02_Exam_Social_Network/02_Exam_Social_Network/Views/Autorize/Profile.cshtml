@@ -1,7 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@using _02_Exam_Social_Network.Data.Entities
+@using DataAccess.Data.Entities
 @model User
-
+@{
+    var profileId = Context.Session.GetString("ProfileId");
+}
 
 
 
@@ -13,14 +15,23 @@
                 <div class="ProfileText">
                     <div class="FirstMiniProf">
                         <p id="NickNameId">@Model.UserName</p>
-                        <button class="firstRowBtn"> <p class="MagrinP">Edit profile</p></button>
-                        <button class="firstRowBtn"> <p class="MagrinP">View archive</p></button>
+                        @if(Model.Id == profileId)
+                        {
+                            <a asp-action="ProfileEdit" asp-controller="Autorize" class="firstRowBtn"> <p class="MagrinP">Edit profile</p></a>
+                            <button class="firstRowBtn"> <p class="MagrinP">View archive</p></button>
+                        }
+                        else
+                        {
+                        <a asp-action="FollowToUser" asp-controller="Autorize" asp-route-UserId="@Model.Id" class="BlueBtnMini">Follow</a>
+
+                        }
+
 
                     </div>
                     <div class="RowProfile">
-                        <p class="nextPub"><span class="numberPub">0</span>publications</p>
-                        <p class="nextPub"><span class="numberPub">23</span>subscribers</p>
-                        <p class="nextPub"><span class="numberPub">28</span>subscriptions</p>
+                        <p class="nextPub"><span class="numberPub">@Model.Posts.Count()</span>publications</p>
+                        <p class="nextPub"><span class="numberPub">@Model.Followers?.Count()</span>subscribers</p>
+                        <p class="nextPub"><span class="numberPub">@Model.Following?.Count()</span>subscriptions</p>
 
                     </div>
                     <div>
@@ -60,8 +71,8 @@
                                 <button class="showPartical" data-id="@i.Id"></button>
 
                                 <div class="InfoDivProfile">
-                                    <div class="backInfo"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>@Model.PostUserLikes.Where(m => m.PostId == i.Id).Count()</p></div>
-                                    <div class="backInfo1"><img class="ImgInfo" src="/icons/chat.png" /><p>@Model.Coments.Where(m=> m.PostId == i.Id).Count()</p></div>
+                                    <div class="backInfo"><img class="ImgInfo" src="/icons/heartlightfill.png" /><p>@i.PostUserLikes.Count()</p></div>
+                                    <div class="backInfo1"><img class="ImgInfo" src="/icons/chat.png" /><p>@i.Coments.Count()</p></div>
 
                                 </div>
 

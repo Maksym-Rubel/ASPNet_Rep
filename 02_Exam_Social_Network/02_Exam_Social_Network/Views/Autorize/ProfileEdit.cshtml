@@ -1,0 +1,52 @@
+﻿@using DataAccess.Data.Entities
+@model User
+
+
+
+<div class="MainProfileDiv">
+    <div class="ProfileDiv">
+        
+        <div style="display:flex; flex-direction:row; flex:1;">
+            <div class="ImgDivMin">
+                <img class="ImgMini" src=@Model.ImgUrl alt="Text" />
+
+            </div>
+            <div class="textRow">
+                <div class="TextMiniDiv2">
+                    <p class="TextMini">@Model.UserName</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button id="logout" type="submit" class="BlueBtn">
+                Change account
+            </button>
+        </form>
+
+    </div>
+    <form method="post" class="FormClass" asp-action="ProfileEdit" asp-controller="Autorize" >
+
+        <div class="TextField2">
+            <label for="Input_Email" class="CustomLabel1">Profile image</label>
+            <input asp-for="ImgUrl" class="InputFieldBorder" autocomplete="off" placeholder=@Model.ImgUrl />
+            @* <span asp-validation-for="Input.Email" class="ValidationMessage"></span> *@
+        </div>
+        <div class="TextField2">
+            <label for="Input_Email" class="CustomLabel1">User Name</label>
+            <input asp-for="UserName" class="InputFieldBorder" autocomplete="off" placeholder=@Model.UserName />
+            @* <span asp-validation-for="Input.Email" class="ValidationMessage"></span> *@
+        </div>
+        <div class="TextField2">
+            <label for="Input_Email" class="CustomLabel1">About you</label>
+            <input asp-for="Email" class="InputFieldBorder" autocomplete="off" placeholder="@Model.Email" />
+            @* <span asp-validation-for="Input.Email" class="ValidationMessage"></span> *@
+        </div>
+
+
+        <div class="TextField3">
+            <button type="submit" class="BlueBtnBig">Send Data</button>
+        </div> 
+    </form>
+</div>

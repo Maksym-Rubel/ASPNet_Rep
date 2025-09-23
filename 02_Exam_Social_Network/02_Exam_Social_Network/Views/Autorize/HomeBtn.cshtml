@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@using _02_Exam_Social_Network.Data.Entities
+@using DataAccess.Data.Entities
 @* @using _02_Exam_Social_Network.js *@
 @model List<User>
 @{
@@ -171,16 +171,53 @@
 
     </div>
     <div class="rightMenu">
-        @foreach (var items in Model)
-        {
-            <div class="profileMini">
-                <div class="ImgDivMin">
-                 <img class="ImgMini" src=@items.ImgUrl alt="Text" /> 
+        <div class="profileMini">
+            <div class="ImgDivMin">
+                <img class="ImgMini" src=@Model.FirstOrDefault(m=> m.Id == profileId)?.ImgUrl alt="Text" />
+
+            </div>
+            <div class="textRow">
+                <div class="TextMiniDiv">
+                    <p class="TextMini">@Model.FirstOrDefault(m => m.Id == profileId)?.UserName</p>
 
                 </div>
-                <div class="TextMiniDiv">
-                    <p class="TextMini">@items.UserName</p>
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button id="logout" type="submit" class="emptyBtn12">
+                        <p class="TextMiniBlue">Change account</p>
+                    </button>
+                </form>
+            </div>
+            
+
+        </div>
+        <div class="TextRecRow">
+            <p>Recomendation for you</p>
+            
+        </div>
+        
+        @foreach(var item in Model.Where(m=> m.Id != profileId))
+        {
+            <div class="profileMini">
+                <a asp-action="Profile" asp-controller="Autorize" asp-route-UserId="@item.Id">
+                    <div class="ImgDivMin">
+                        <img class="ImgMini" src=@item.ImgUrl alt="Text" />
+
+                    </div>
+                </a>
+                
+                <div class="textRow">
+                    <div class="TextMiniDiv">
+                        <p class="TextMini">@item.UserName</p>
+
+                    </div>
+                    <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button id="logout" type="submit" class="emptyBtn12">
+                            <p class="TextMiniBlue">Change account</p>
+                        </button>
+                    </form>
                 </div>
+
+
             </div>
         }
     </div>

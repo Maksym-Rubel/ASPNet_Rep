@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace _02_Exam_Social_Network.Data.Entities
+namespace DataAccess.Data.Entities
 {
     public class PostUserLike
     {

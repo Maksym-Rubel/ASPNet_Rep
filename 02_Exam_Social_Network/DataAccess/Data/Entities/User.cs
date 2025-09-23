@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace _02_Exam_Social_Network.Data.Entities
+namespace DataAccess.Data.Entities
 
 {
     public class User : IdentityUser
@@ -25,7 +25,8 @@ namespace _02_Exam_Social_Network.Data.Entities
         //public ICollection<Post> LikedPosts { get; set; } = new List<Post>();
         public ICollection<PostUserLike> PostUserLikes { get; set; } = new List<PostUserLike>();
 
-
-
+        public ICollection<UserFollow> Followers { get; set; }     
+        public ICollection<UserFollow> Following { get; set; }
+        
     }
 }

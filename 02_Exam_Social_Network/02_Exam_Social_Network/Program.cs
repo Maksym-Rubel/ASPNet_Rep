@@ -1,7 +1,7 @@
-using _02_Exam_Social_Network.Data;
+using DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using _02_Exam_Social_Network.Data.Entities;
+using DataAccess.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SNetworkDbContextConnection") ?? throw new InvalidOperationException("Connection string 'SNetworkDbContextConnection' not found.");

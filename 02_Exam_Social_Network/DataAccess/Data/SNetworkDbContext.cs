@@ -1,9 +1,9 @@
-﻿using _02_Exam_Social_Network.Data.Entities;
+﻿using DataAccess.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace _02_Exam_Social_Network.Data
+namespace DataAccess.Data
 {
     public class SNetworkDbContext : IdentityDbContext<User>
     {
@@ -24,6 +24,8 @@ namespace _02_Exam_Social_Network.Data
 
 
         public DbSet<PostUserLike> PostUserLikes { get; set; }
+        public DbSet<UserFollow> UserFollows { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -60,18 +62,31 @@ namespace _02_Exam_Social_Network.Data
             modelBuilder.Entity<Post>()
             .HasMany(c => c.PostUserLikes)
             .WithOne(c => c.Post)
+            .HasForeignKey(c => c.PostId)
             .OnDelete(DeleteBehavior.Cascade);
 
 
             modelBuilder.Entity<User>()
             .HasMany(c => c.PostUserLikes)
             .WithOne(c => c.User)
+            .HasForeignKey(c => c.UserId)
             .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<User>()
             .HasMany(c => c.Posts)
             .WithOne(c => c.User)
             .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<UserFollow>()
+    .HasOne(uf => uf.Follower)
+    .WithMany(u => u.Following)
+    .HasForeignKey(uf => uf.FollowerId)
+    .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<UserFollow>()
+                .HasOne(uf => uf.Followed)
+                .WithMany(u => u.Followers)
+                .HasForeignKey(uf => uf.FollowedId)
+                .OnDelete(DeleteBehavior.Restrict);
             //modelBuilder.Entity<User>().HasData(new List<User>()
             //{
 

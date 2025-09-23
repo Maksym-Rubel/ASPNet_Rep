@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace _02_Exam_Social_Network.Migrations
+namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class asd23 : Migration
+    public partial class AddPostLikeUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
