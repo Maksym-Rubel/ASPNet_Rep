@@ -88,7 +88,7 @@
                 <form method="post" class="FormFlex" enctype="multipart/form-data" asp-controller="Autorize" asp-action="SetComment">
                             <input type="hidden" name="PostId" value="@Model.Id" />
 
-                            <textarea name="Message" class="TextAreaPartial" placeholder="Add a comment..."></textarea>
+                            <input type="text" name="Message" class="TextAreaPartial" placeholder="Add a comment..."/>
                             
                             <input  class="PublishPartial" type="submit" value="Publish" />
 

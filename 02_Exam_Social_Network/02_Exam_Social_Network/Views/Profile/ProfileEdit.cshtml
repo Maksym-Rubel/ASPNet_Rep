@@ -50,3 +50,51 @@
         </div> 
     </form>
 </div>
+
+@section Scripts
+{
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>
+            {
+                const menuLeft = document.getElementById("leftMenu1");
+                const btnSearch = document.getElementById("BtnSearch");
+                const AllText = document.querySelectorAll(".OpacityP");
+                const InstagramLogo = document.getElementById("FirstBlock12");
+                const InstagramLogo2 = document.getElementById("InnerInmg");
+                const ParitalBack = document.getElementById("ParitalBack");
+
+                btnSearch.addEventListener("click",()=>
+                {
+                    if(menuLeft.style.width == "70px")
+                    {
+                        menuLeft.style.width = "250px";
+                        AllText.forEach(item =>
+                        {
+                            item.style.opacity = "1";
+                        });
+                        InstagramLogo.style.opacity = "1";
+                        InstagramLogo2.style.backgroundSize = "0%";
+                        ParitalBack.style.width = "180px";
+                        ParitalBack.style.boxShadow = "none";
+
+                    }
+                    else
+                    {
+                        menuLeft.style.width = "70px";
+                    AllText.forEach(item =>
+                        {
+                            item.style.opacity = "0";
+                        });
+                    InstagramLogo.style.opacity = "0";
+                    InstagramLogo2.style.backgroundSize = "35%";
+                    ParitalBack.style.width = "400px";
+                        ParitalBack.style.boxShadow = "10px 0 15px rgba(0, 0, 0, 0.1)";
+
+                    }
+
+
+                });
+            });
+    </script>
+        
+}

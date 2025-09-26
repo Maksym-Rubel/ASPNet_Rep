@@ -29,7 +29,7 @@
     <div class="CenterColl">
                 <h1>@ViewData["Title"]</h1>
 
-            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" asp-action="HomeBtn" asp-controller="Autorize" method="post">
              
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                     <div class="TextField">

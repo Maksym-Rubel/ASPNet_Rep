@@ -35,10 +35,13 @@
                           
 
                             <div class="firstblockphoto">
-                                <div class="ImgDivPost1">
-                                    <img class="imgphoto" src=@item.ImgUrl />
+                                <a asp-action="Profile" asp-controller="Profile" asp-route-UserId="@i.UserId">
 
-                                </div>
+                                    <div class="ImgDivPost1">
+                                        <img class="imgphoto" src=@item.ImgUrl />
+
+                                    </div>
+                                </a>
                                 <div class="firstblockcolumn">
                                     <p class="fontMax">@item.UserName</p>
                                     @* <p class="fontMax2">Rivne</p> *@
@@ -99,8 +102,8 @@
                                         if (@items.UserId == @i.UserId)
                                         {
                                             <p class="ComentsCount1"><span class="UserNameSpan">@items.User.UserName</span> @items.Message</p>
-                                          
-                                         
+                                            break;
+
                                         }
 
                                     }
@@ -143,9 +146,9 @@
                     </p>
                 </div>
                 <div id="divafterstr" class="strechdiv332">
-
+                    <img id="MyImgAdd" src="/icons/createicon.png" />
                     <p id="TextBtrn23" class="MainTextBlock">Drag and drop photos and videos here</p>
-                    <button id="SelectBtn" class="SelectBrncl" onfocus="defaultValue()"> <p class="PSelect">Select on computer</p></button>
+                    <button id="SelectBtn" class="BlueBtn" onfocus="defaultValue()"> <p class="PSelect">Select on computer</p></button>
 
 
                     <div id="ImageTyppe" class="imageOverflow">
@@ -159,7 +162,7 @@
 
 
                             <textarea id="form1" class="enterclass" type="text" name="Message" placeholder="Enter product title"></textarea>
-                            <input id="form2" class="sumbitbtn" type="submit" value="Upload File" />
+                            <input id="form2" class="BlueBtn" type="submit" value="Upload File" />
 
 
                         </form>
@@ -194,32 +197,38 @@
             <p>Recomendation for you</p>
             
         </div>
+        <div class="Recom">
+            @foreach (var item in Model.Where(m => m.Id != profileId))
+            {
+                @if (!Model.FirstOrDefault(m => m.Id == profileId).Following.Any(m => m.FollowerId == profileId && m.FollowedId == item.Id))
+               {
+                    <div class="profileMini1">
+                        <a asp-action="Profile" asp-controller="Profile" asp-route-UserId="@item.Id">
+                            <div class="ImgDivMin">
+                                <img class="ImgMini" src=@item.ImgUrl alt="Text" />
+
+                            </div>
+                        </a>
+
+                        <div class="textRow">
+                            <div class="TextMiniDiv">
+                                <p class="TextMini">@item.UserName</p>
+
+                            </div>
+                            <a asp-action="FollowToUser" asp-controller="Autorize" asp-route-UserId="@item.Id" class="BlueBtnMini">Subscribe</a>
+
+                        </div>
+
+
+                    </div>
+                }
+             
+
+
+            }
+        </div>
+       
         
-        @foreach(var item in Model.Where(m=> m.Id != profileId))
-        {
-            <div class="profileMini">
-                <a asp-action="Profile" asp-controller="Autorize" asp-route-UserId="@item.Id">
-                    <div class="ImgDivMin">
-                        <img class="ImgMini" src=@item.ImgUrl alt="Text" />
-
-                    </div>
-                </a>
-                
-                <div class="textRow">
-                    <div class="TextMiniDiv">
-                        <p class="TextMini">@item.UserName</p>
-
-                    </div>
-                    <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                        <button id="logout" type="submit" class="emptyBtn12">
-                            <p class="TextMiniBlue">Change account</p>
-                        </button>
-                    </form>
-                </div>
-
-
-            </div>
-        }
     </div>
 
 </div>
@@ -230,6 +239,47 @@
 
 @section Scripts {
     <script>
+        document.addEventListener("DOMContentLoaded",()=>
+        {
+            const menuLeft = document.getElementById("leftMenu1");
+            const btnSearch = document.getElementById("BtnSearch");
+            const AllText = document.querySelectorAll(".OpacityP");
+            const InstagramLogo = document.getElementById("FirstBlock12");
+            const InstagramLogo2 = document.getElementById("InnerInmg");
+            const ParitalBack = document.getElementById("ParitalBack");
+
+            btnSearch.addEventListener("click",()=>
+            {
+                if(menuLeft.style.width == "70px")
+                {
+                    menuLeft.style.width = "250px";
+                    AllText.forEach(item =>
+                    {
+                        item.style.opacity = "1";
+                    });
+                    InstagramLogo.style.opacity = "1";
+                    InstagramLogo2.style.backgroundSize = "0%";
+                    ParitalBack.style.width = "180px";
+                    ParitalBack.style.boxShadow = "none";
+
+                }
+                else
+                {
+                    menuLeft.style.width = "70px";
+                AllText.forEach(item =>
+                    {
+                        item.style.opacity = "0";
+                    });
+                InstagramLogo.style.opacity = "0";
+                InstagramLogo2.style.backgroundSize = "35%";
+                ParitalBack.style.width = "400px";
+                    ParitalBack.style.boxShadow = "10px 0 15px rgba(0, 0, 0, 0.1)";
+
+                }
+                
+
+            });
+        });
 
         
         const LikeBtn = document.querySelectorAll(".LikeBtn");
@@ -273,7 +323,7 @@
         document.addEventListener("DOMContentLoaded",function()
         {
             const btn = document.querySelectorAll(".rigthBtn");
-        const btn2 = document.querySelectorAll(".leftBtn");
+            const btn2 = document.querySelectorAll(".leftBtn");
 
         btn.forEach(item => {
              item.addEventListener("click", () => {
@@ -337,6 +387,9 @@
         const divafterstr = document.getElementById("divafterstr");
         const TextBtrn23 = document.getElementById("TextBtrn23");
         const entercls22 = document.getElementById("entercls22");
+        const MyImgAdd = document.getElementById("MyImgAdd");
+
+        
 
 
         const createbtns = document.getElementById("createbtn");
@@ -365,7 +418,7 @@
             divafterstr.className = "strechdivafter";
             TextBtrn23.style.display = "none";
             entercls22.style.display = "flex";
-
+            MyImgAdd.style.display = "none";
         }
         function defaultValue()
         {

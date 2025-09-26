@@ -10,6 +10,7 @@ wwwroot\icons\chat.png
 wwwroot\icons\comment.png
 wwwroot\icons\commentdark.png
 wwwroot\icons\createdark.png
+wwwroot\icons\createicon.png
 wwwroot\icons\createlight.png
 wwwroot\icons\dots.png
 wwwroot\icons\dotsdark.png
@@ -30,6 +31,7 @@ wwwroot\icons\icongrid.png
 wwwroot\icons\iconlight.png
 wwwroot\icons\instagram.png
 wwwroot\icons\instagramdark.png
+wwwroot\icons\instagramlogo.png
 wwwroot\icons\magnifying-glass.png
 wwwroot\icons\making-groupchats-v0-vzlvaw8el9le1.webp
 wwwroot\icons\messenger.png

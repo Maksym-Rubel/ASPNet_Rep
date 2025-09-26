@@ -17,14 +17,22 @@
                         <p id="NickNameId">@Model.UserName</p>
                         @if(Model.Id == profileId)
                         {
-                            <a asp-action="ProfileEdit" asp-controller="Autorize" class="firstRowBtn"> <p class="MagrinP">Edit profile</p></a>
+                            <a asp-action="ProfileEdit" asp-controller="Profile" class="firstRowBtn"> <p class="MagrinP">Edit profile</p></a>
                             <button class="firstRowBtn"> <p class="MagrinP">View archive</p></button>
                         }
                         else
                         {
-                        <a asp-action="FollowToUser" asp-controller="Autorize" asp-route-UserId="@Model.Id" class="BlueBtnMini">Follow</a>
+                            if (Model.Followers.Any(m => m.FollowerId == profileId))
+                            {
+                                <a asp-action="UnFollowToUser" asp-controller="Autorize" asp-route-UserId="@Model.Id" class="GrayBtnMini">Unsubscribe</a>
+                            }
+                            else
+                            {
+                                <a asp-action="FollowToUser" asp-controller="Autorize" asp-route-UserId="@Model.Id" class="BlueBtnMini">Subscribe</a>
+                            }
+                   
 
-                        }
+                         }
 
 
                     </div>
@@ -92,6 +100,47 @@
 @section Scripts
 {
     <script>
+        document.addEventListener("DOMContentLoaded",()=>
+        {
+            const menuLeft = document.getElementById("leftMenu1");
+            const btnSearch = document.getElementById("BtnSearch");
+            const AllText = document.querySelectorAll(".OpacityP");
+            const InstagramLogo = document.getElementById("FirstBlock12");
+            const InstagramLogo2 = document.getElementById("InnerInmg");
+            const ParitalBack = document.getElementById("ParitalBack");
+
+            btnSearch.addEventListener("click",()=>
+            {
+                if(menuLeft.style.width == "70px")
+                {
+                    menuLeft.style.width = "250px";
+                    AllText.forEach(item =>
+                    {
+                        item.style.opacity = "1";
+                    });
+                    InstagramLogo.style.opacity = "1";
+                    InstagramLogo2.style.backgroundSize = "0%";
+                    ParitalBack.style.width = "180px";
+                    ParitalBack.style.boxShadow = "none";
+
+                }
+                else
+                {
+                    menuLeft.style.width = "70px";
+                AllText.forEach(item =>
+                    {
+                        item.style.opacity = "0";
+                    });
+                InstagramLogo.style.opacity = "0";
+                InstagramLogo2.style.backgroundSize = "35%";
+                ParitalBack.style.width = "400px";
+                    ParitalBack.style.boxShadow = "10px 0 15px rgba(0, 0, 0, 0.1)";
+
+                }
+
+
+            });
+        });
         $(".showPartical").on("click",function()
         {
             let PostId = $(this).data("id");

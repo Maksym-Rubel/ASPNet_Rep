@@ -18,49 +18,31 @@
     <link href="https://fonts.cdnfonts.com/css/venn-trial" rel="stylesheet">
 </head>
 <body id="bodycrate">
-    
-    <div class="leftMenu">
-        <div class="FirstBlock"></div>
+    <partial name="_SearchPartial.cshtml" ></partial> 
+    <div id="leftMenu1" class="leftMenu">
+        <div id="FirstBlock1">
+            <div id="FirstBlock12"></div>
+
+            <div id="InnerInmg"></div>
+        </div>
         <div class="SecondBlock">
-            <a asp-action="HomeBtn" asp-controller="Autorize" class="buttondef"><img class="buttonimg" src="~/icons/hut.png" />Home</a>
-            <a asp-action="HomeBtn"  class="buttondef"><img class="buttonimg" src="~/icons/search.png" />Search</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/icondark.png" />Interesting</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/reelsdark.png" />Reels</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messenger.png" />Messages</a>
-            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/heart.png" />Notification</a>
+            <a asp-action="HomeBtn" asp-controller="Autorize" class="buttondef"><img class="buttonimg" src="~/icons/hut.png" /><p class="OpacityP">Home</p></a>
+            <button id="BtnSearch" class="buttondef"><img class="buttonimg" src="~/icons/search.png" /><p class="OpacityP">Search</p></button>
+            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/icondark.png" /><p class="OpacityP">Interesting</p></a>
+            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/reelsdark.png" /><p class="OpacityP">Reels</p></a>
+            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/messenger.png" /><p class="OpacityP">Messages</p></a>
+            <a asp-action="HomeBtn" class="buttondef"><img class="buttonimg" src="~/icons/heart.png" /><p class="OpacityP">Notification</p></a>
             @* <a asp-action="Create" id="createbtn" class="buttondef"><img class="buttonimg" src="~/icons/createlight.png" />Create</a> *@
 
             <button id="createbtn" class="buttondef">
-                <img class="buttonimg" src="~/icons/createdark.png" />Create</>
+                <img class="buttonimg" src="~/icons/createdark.png" /><p class="OpacityP">Create</p></>
                 </button>
-            <a asp-action="Profile" asp-controller="Autorize" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" />Profile</a>
+            <a asp-action="Profile" asp-controller="Profile" class="buttondef"><img class="buttonimg" src="~/icons/messengerligth.png" /><p class="OpacityP">Profile</p></a>
                     </div>
         <div class="ThirdBlock">
 
         </div>
     </div> 
-    @* <div id="displaycreate" class="createnewpost">
-        <div class="maincreatediv">
-            <button id="backbtn">back</button> *@
-
-            @* <div class="createdivadd">
-                <div class="text-center">
-
-                    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
-                        <input type="file" name="fileUp" />
-                        <input type="submit" value="Upload File" />
-                        <div class="col-md-8">
-                            <label asp-for="Message" class="form-label">Title</label>
-                            <input asp-for="Message" type="text" class="form-control" placeholder="Enter product title">
-                           <span asp-validation-for="Message" class="small text-danger"></span> 
-                        </div>
-                    </form>
-                </div> 
-
-
-             </div> *@
-    @*     </div>
-    </div> *@
     <div  class="container">
         <main role="main" >
             @RenderBody()
@@ -75,3 +57,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

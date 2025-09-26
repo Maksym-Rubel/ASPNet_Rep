@@ -77,10 +77,13 @@ namespace _02_Exam_Social_Network.Controllers
         }
         public IActionResult HomeBtn()
         {
-           
+            TempData["ReturnUrl"] = Request.Path + Request.QueryString;
+
             HttpContext.Session.SetString("ProfileId", CurrentUserId);
             Console.WriteLine(CurrentUserId);
             var model = ctx.Users
+                    .Include(u => u.Followers)
+                    .Include(u => u.Following)
                 .Include(u => u.Posts)
                     .ThenInclude(m=>m.PostUserLikes)
                 .Include(u => u.Posts)
@@ -89,42 +92,7 @@ namespace _02_Exam_Social_Network.Controllers
                 .ToList();
             return View(model);
         }
-        public IActionResult Profile(string? UserId)
-        {
-            HttpContext.Session.SetString("ProfileId", CurrentUserId);
-
-            if (UserId == null) {
-                var model = ctx.Users
-                    .Include(u => u.Followers)
-                    .Include(u => u.Following)
-                .Include(u => u.Posts)
-                    .ThenInclude(p => p.ImgUrls)
-                .Include(u => u.Posts)
-                    .ThenInclude(m => m.PostUserLikes)
-                .Include(u => u.Posts)
-                    .ThenInclude(m => m.Coments)
-                .FirstOrDefault(m => m.Id == CurrentUserId);
-
-                return View(model);
-            }
-            else
-            {
-                var model = ctx.Users
-                    .Include(u => u.Followers)
-                    .Include(u => u.Following)
-                .Include(u => u.Posts)
-                    .ThenInclude(p => p.ImgUrls)
-                .Include(u => u.Posts)
-                    .ThenInclude(m => m.PostUserLikes)
-                .Include(u => u.Posts)
-                    .ThenInclude(m => m.Coments)
-                .FirstOrDefault(m => m.Id == UserId);
-
-                return View(model);
-            }
-
-            
-        }
+       
 
         public IActionResult AddLike(int postId)
         {
@@ -210,6 +178,15 @@ namespace _02_Exam_Social_Network.Controllers
                 return NotFound();
             return PartialView("_PostViewPartial", model);
         }
+        public IActionResult GetSerchList()
+        {
+            var model = ctx.Users;
+                
+
+            if (model == null)
+                return NotFound();
+            return PartialView("_SearchPartial", model);
+        }
         [HttpPost]
         public IActionResult SetComment(string Message, int PostId)
         {
@@ -226,7 +203,10 @@ namespace _02_Exam_Social_Network.Controllers
             if (model == null)
                 return NotFound();
 
-
+            if (TempData["ReturnUrl"] != null)
+            {
+                return Redirect(TempData["ReturnUrl"].ToString());
+            }
 
             return RedirectToAction("Profile", model);
 
@@ -234,42 +214,54 @@ namespace _02_Exam_Social_Network.Controllers
 
 
         }
-        [HttpGet]
-        public IActionResult ProfileEdit()
-        {
-            var model = ctx.Users.FirstOrDefault(m=> m.Id == CurrentUserId);
+   
+        
 
-            return View(model);
-        }
-        [HttpPost]
-        public IActionResult ProfileEdit(User user)
-        {
-            var MyUser = ctx.Users.FirstOrDefault(l => l.Id == CurrentUserId);
 
-            if (MyUser != null)
-            {
-                MyUser.UserName = user.UserName;
-                MyUser.ImgUrl = user.ImgUrl;
-                MyUser.Email = user.Email;
-                ctx.SaveChanges();
 
-            }
-
-            return RedirectToAction("Profile");
-        }
+        
 
         public IActionResult FollowToUser(string UserId)
         {
 
-            
-            ctx.UserFollows.Add(new UserFollow
+            if(ctx.UserFollows.Any(m => m.FollowerId == CurrentUserId && m.FollowedId == UserId))
             {
-                FollowerId = CurrentUserId,
-                FollowedId = UserId
-            });
-            ctx.SaveChanges();
+                return RedirectToAction("Profile", new { UserId = UserId });
+
+            }
+            else
+            {
+                ctx.UserFollows.Add(new UserFollow
+                {
+                    FollowerId = CurrentUserId,
+                    FollowedId = UserId
+                });
+                ctx.SaveChanges();
+            }
+                
             return RedirectToAction("Profile", new { UserId = UserId });
         }
+        public IActionResult UnFollowToUser(string UserId)
+        {
+
+
+            var user = ctx.UserFollows.FirstOrDefault(m => m.FollowerId == CurrentUserId && m.FollowedId == UserId);
+            //if (user != null)
+            //{
+            //    var Folowers = user.Followers?.FirstOrDefault(l=> l.FollowerId == CurrentUserId);
+            //    Console.WriteLine("User NOt Null");
+            //    user.Followers?.Remove(Folowers);
+            //    ctx.SaveChanges();
+
+            //}
+            if (user != null)
+            {
+                ctx.UserFollows.Remove(user);
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("Profile", new { UserId });
+        }
+        
 
     }
 }
